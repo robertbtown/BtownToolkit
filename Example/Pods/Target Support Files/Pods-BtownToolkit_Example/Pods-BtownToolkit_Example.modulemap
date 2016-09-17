@@ -1,0 +1,6 @@
+framework module Pods_BtownToolkit_Example {
+  umbrella header "Pods-BtownToolkit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

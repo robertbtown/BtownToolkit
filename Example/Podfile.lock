@@ -1,0 +1,16 @@
+PODS:
+  - BtownToolkit (0.1.0)
+
+DEPENDENCIES:
+  - BtownToolkit (from `../`)
+
+EXTERNAL SOURCES:
+  BtownToolkit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BtownToolkit: 3ea00baf44f70aeafab255c2719ab7fc46c9a7e8
+
+PODFILE CHECKSUM: f32302e08b8630462d62525ee3fbc2b79d4033d9
+
+COCOAPODS: 1.0.1
