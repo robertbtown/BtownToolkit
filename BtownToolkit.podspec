@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-                      SimpleCamera is a framework leveraging the power of AVFoundation for better photo and video experience.
+                      BtownToolkit is a set of tools that make your everyday life in Swift and the iOS SDK a little bit easier.
                        DESC
 
   s.homepage         = 'https://github.com/robertbtown/BtownToolkit'
