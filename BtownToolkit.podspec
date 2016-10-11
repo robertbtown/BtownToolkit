@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.name             = 'BtownToolkit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'This is a Toolkit from Btown. It simplifies '
 
   s.description      = <<-DESC
