@@ -102,7 +102,7 @@ public class ScrollableImageView: UIScrollView {
         }
     }
     
-    init() {
+    public init() {
         lastZoomScale = 0
         previousScrollViewFrame = .zero
         imageView = UIImageView()
