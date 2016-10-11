@@ -1,42 +1,20 @@
-#
-# Be sure to run `pod lib lint BtownToolkit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.name             = 'BtownToolkit'
   s.version          = '0.1.1'
-  s.summary          = 'This is a Toolkit from Btown.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'This is a Toolkit from Btown. It simplifies '
 
   s.description      = <<-DESC
-                      BtownToolkit is a set of tools that make your everyday life in Swift and the iOS SDK a little bit easier.
+                      This toolkit tries to simplify the lives for app developers by supplying easy to use and feature-rich components and tools that we all need in our everyday code creation. The aim is to continuously add on more components and features to the toolkit as soon as a need for something new is discovered.
                        DESC
 
   s.homepage         = 'https://github.com/robertbtown/BtownToolkit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Robert Magnusson' => 'robert@btown.se' }
   s.source           = { :git => 'https://github.com/robertbtown/BtownToolkit.git', :tag => "#{s.version}" }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.source_files = 'BtownToolkit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'BtownToolkit' => ['BtownToolkit/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
