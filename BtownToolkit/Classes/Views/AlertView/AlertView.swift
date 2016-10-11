@@ -31,6 +31,12 @@ public class AlertView {
     private var textFieldInfoMapper = [String:UITextField]()
     
     /**
+        Toggle if StatusBar should be hidden or shown when presenting
+        alertView. By default StatusBar is shown.
+     */
+    public static var prefersStatusBarHidden = false
+    
+    /**
         If set then this closure is called when the AlertView disappears.
      */
     public var wasDismissedClosure: (() -> ())?

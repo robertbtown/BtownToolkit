@@ -12,7 +12,7 @@ fileprivate typealias PresentObjectCompletionClosure = () -> ()
 
 fileprivate class AlertViewPresenterViewController : UIViewController {
     override var prefersStatusBarHidden: Bool {
-        return true
+        return AlertView.prefersStatusBarHidden
     }
 }
 
