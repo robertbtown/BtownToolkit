@@ -18,20 +18,20 @@ AlertView is using built in logic from UIAlertController but you dont need to pr
 ```
 let alertView = AlertView(title: "title", message: "message")
 alertView.addTextField(identifier: "TextTield1") { (textField) in
-textField.font = UIFont.boldSystemFont(ofSize: 16)
-textField.textColor = UIColor.red
+    textField.font = UIFont.boldSystemFont(ofSize: 16)
+    textField.textColor = UIColor.red
 }
 alertView.addAction(title: "Delete", actionType: .destructive, actionCallback: nil) {
-print("Destructive Action")
+    print("Destructive Action")
 }
 alertView.addAction(title: "Normal", actionType: .normal) {
-print("Normal Action")
+    print("Normal Action")
 }
 alertView.addAction(title: "Cancel", actionType: .cancel) {
-print("Cancel Action")
+    print("Cancel Action")
 }
 alertView.wasDismissedClosure = {
-print("AlertView did disappear")
+    print("AlertView did disappear")
 }
 alertView.show()
 ```
@@ -55,11 +55,11 @@ $ pod install
 **:warning: To use CocoaPods with Xcode 8.0 and Swift 3.0, you might need to add the following lines at the bottom of your podfile: :warning:**
 ```
 post_install do |installer|
-installer.pods_project.targets.each do |target|
-target.build_configurations.each do |config|
-config.build_settings['SWIFT_VERSION'] = '3.0'
-end
-end
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '3.0'
+        end
+    end
 end
 ```
 
