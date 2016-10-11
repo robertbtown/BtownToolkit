@@ -17,6 +17,8 @@
 		A941CA333226DB8ED3BC0B1D5FA8B676 /* Pods-BtownToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A747600291EE6424A6776835F2B906B /* Pods-BtownToolkit_Example-dummy.m */; };
 		C234036CB1941E4A0504180248394B80 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AFE6F10A0297D587FF5F1D568C03FD /* ReplaceMe.swift */; };
 		F70083E4C2597728E82EDBC1D6977038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FC4B4D191DACEC9000A76A5B /* ScrollableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */; };
+		FC4B4D1E1DAD2C1B00A76A5B /* ImageCropSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */; };
 		FCB4BEAE1D8EF2F1003D6095 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAA1D8EF2F1003D6095 /* AlertView.swift */; };
 		FCB4BEAF1D8EF2F1003D6095 /* AlertViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAB1D8EF2F1003D6095 /* AlertViewAction.swift */; };
 		FCB4BEB01D8EF2F1003D6095 /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAC1D8EF2F1003D6095 /* AlertViewPresenter.swift */; };
@@ -66,6 +68,8 @@
 		CFAA39F9331EF6AB6C924ED526AF889B /* Pods-BtownToolkit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E72C25E2B1225772BE25F793B2EDE0CA /* BtownToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BtownToolkit.modulemap; sourceTree = "<group>"; };
 		EF3B3EF171100854FD78ECF03E28DF21 /* Pods-BtownToolkit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BtownToolkit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollableImageView.swift; path = Views/ImageView/ScrollableImageView.swift; sourceTree = "<group>"; };
+		FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCropSelectionView.swift; path = Views/ImageView/ImageCropSelectionView.swift; sourceTree = "<group>"; };
 		FCB4BEAA1D8EF2F1003D6095 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = Views/AlertView/AlertView.swift; sourceTree = "<group>"; };
 		FCB4BEAB1D8EF2F1003D6095 /* AlertViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewAction.swift; path = Views/AlertView/AlertViewAction.swift; sourceTree = "<group>"; };
 		FCB4BEAC1D8EF2F1003D6095 /* AlertViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewPresenter.swift; path = Views/AlertView/AlertViewPresenter.swift; sourceTree = "<group>"; };
@@ -231,9 +235,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FC4B4D171DACEC6300A76A5B /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */,
+				FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */,
+			);
+			name = ImageView;
+			sourceTree = "<group>";
+		};
 		FCB4BEA81D8EF2A5003D6095 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC4B4D171DACEC6300A76A5B /* ImageView */,
 				FCB4BEA91D8EF2AE003D6095 /* AlertView */,
 			);
 			name = Views;
@@ -368,9 +382,11 @@
 				FCB4BEB01D8EF2F1003D6095 /* AlertViewPresenter.swift in Sources */,
 				FCB4BEB11D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift in Sources */,
 				94FB33B88D577D8177151A3A75A64432 /* BtownToolkit-dummy.m in Sources */,
+				FC4B4D191DACEC9000A76A5B /* ScrollableImageView.swift in Sources */,
 				FCB4BEAF1D8EF2F1003D6095 /* AlertViewAction.swift in Sources */,
 				C234036CB1941E4A0504180248394B80 /* ReplaceMe.swift in Sources */,
 				FCB4BEAE1D8EF2F1003D6095 /* AlertView.swift in Sources */,
+				FC4B4D1E1DAD2C1B00A76A5B /* ImageCropSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

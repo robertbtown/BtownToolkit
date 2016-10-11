@@ -16,6 +16,8 @@
 		D76C1C547C2DC7EC7FDA177B /* Pods_BtownToolkit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A9B6B8A9EAB5377CDB1486 /* Pods_BtownToolkit_Example.framework */; };
 		FC2C8C211D8FBEFB00C1CC81 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8C201D8FBEFB00C1CC81 /* ListItem.swift */; };
 		FC2C8C231D8FC2E600C1CC81 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8C221D8FC2E600C1CC81 /* StartViewModel.swift */; };
+		FC4B4D1C1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1B1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift */; };
+		FC4B4D201DAD374200A76A5B /* ImageCropSelectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */; };
 		FCB53C2C1D9832D500835F90 /* AlertViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */; };
 		FCB53C2F1D99873E00835F90 /* FeatureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C2E1D99873E00835F90 /* FeatureItem.swift */; };
 		FCB53C311D9FC39600835F90 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C301D9FC39600835F90 /* StartViewController.swift */; };
@@ -52,6 +54,8 @@
 		F6D66372F9C163744F2D2310 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FC2C8C201D8FBEFB00C1CC81 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItem.swift; path = Source/ListItems/ListItem.swift; sourceTree = "<group>"; };
 		FC2C8C221D8FC2E600C1CC81 /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewModel.swift; path = Source/Start/StartViewModel.swift; sourceTree = "<group>"; };
+		FC4B4D1B1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollableImageViewViewController.swift; path = Source/ImageView/ScrollableImageViewViewController.swift; sourceTree = "<group>"; };
+		FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCropSelectionViewViewController.swift; path = Source/ImageView/ImageCropSelectionViewViewController.swift; sourceTree = "<group>"; };
 		FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewViewController.swift; path = Source/AlertView/AlertViewViewController.swift; sourceTree = "<group>"; };
 		FCB53C2E1D99873E00835F90 /* FeatureItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureItem.swift; path = Source/FeatureItem/FeatureItem.swift; sourceTree = "<group>"; };
 		FCB53C301D9FC39600835F90 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = Source/Start/StartViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB53C2D1D9986EE00835F90 /* FeatureItem */,
+				FC4B4D1A1DAD239100A76A5B /* ImageView */,
 				FCB53C2A1D9832A200835F90 /* AlertView */,
 				FC2C8C1F1D8FBE9B00C1CC81 /* ListItems */,
 				FC2C8C1C1D8FBD7700C1CC81 /* Start */,
@@ -185,6 +190,15 @@
 				FC2C8C201D8FBEFB00C1CC81 /* ListItem.swift */,
 			);
 			name = ListItems;
+			sourceTree = "<group>";
+		};
+		FC4B4D1A1DAD239100A76A5B /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FC4B4D1B1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift */,
+				FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */,
+			);
+			name = ImageView;
 			sourceTree = "<group>";
 		};
 		FCB53C2A1D9832A200835F90 /* AlertView */ = {
@@ -406,8 +420,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2C8C211D8FBEFB00C1CC81 /* ListItem.swift in Sources */,
+				FC4B4D1C1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift in Sources */,
 				FC2C8C231D8FC2E600C1CC81 /* StartViewModel.swift in Sources */,
 				FCB53C2C1D9832D500835F90 /* AlertViewViewController.swift in Sources */,
+				FC4B4D201DAD374200A76A5B /* ImageCropSelectionViewViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				FCB53C2F1D99873E00835F90 /* FeatureItem.swift in Sources */,
 				FCB53C311D9FC39600835F90 /* StartViewController.swift in Sources */,

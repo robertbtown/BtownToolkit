@@ -10,16 +10,15 @@ import Foundation
 
 struct StartViewModel {
     
-    private(set) var featureItems = [FeatureItem]()
+    let featureItems: [FeatureItem]
     var didSelectListFeatureClosure: ((FeatureItem) -> ())?
     
     init() {
-        setupFeatureItems()
-    }
-    
-    mutating private func setupFeatureItems() {
-        let featureItem = FeatureItem.AlertView
-        featureItems.append(featureItem)
+        featureItems = [
+            .AlertView,
+            .ScrollableImageView,
+            .ImageCropSelectionView
+        ]
     }
     
     func featureItem(atIndexPath: IndexPath) -> FeatureItem {
