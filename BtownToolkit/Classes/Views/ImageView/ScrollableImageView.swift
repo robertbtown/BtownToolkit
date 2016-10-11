@@ -218,8 +218,8 @@ extension ScrollableImageView {
     fileprivate func updateConstraints(forViewSize viewSize: CGSize) {
         let imageSize = image?.size ?? .zero
         
-        var imageWidth = imageSize.width
-        var imageHeight = imageSize.height
+        let imageWidth = imageSize.width
+        let imageHeight = imageSize.height
         
         var viewWidth: CGFloat = 0.0
         var viewHeight: CGFloat = 0.0
