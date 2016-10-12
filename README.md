@@ -36,13 +36,27 @@ alertView.wasDismissedClosure = {
 alertView.show()
 ```
 
+### ImageView-Helpers
+ScrollableImageView is a view where you can set an image and then pinch to zoom in that image and scroll around.
+ImageCropSelectionView is a ScrollableImageView with a round selection area, from which you can get the contained image. It's usable for picking user profile images for example. 
+```
+let scrollableImageView = ScrollableImageView()
+scrollableImageView.image = UIImage(named: "ImageExample")
+scrollableImageView.setImageZoomScaleToAspectFitViewSize()
+scrollableImageView.centerImageInView()
+
+let imageCropSelectionView = ImageCropSelectionView()
+imageCropSelectionView.image = UIImage(named: "ImageExample")
+...
+let userImage = imageCropSelectionView.croppedSelectionImage()
+```
+
 ## Installation
 BtownToolkit is available through [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
 ```
 # Podfile
 use_frameworks!
-source 'https://github.com/robertbtown/BtownPodSpecs.git'
 
 target 'YOUR_TARGET_NAME' do
 pod 'BtownToolkit'
