@@ -59,7 +59,7 @@ BtownToolkit is available through [CocoaPods](https://guides.cocoapods.org/using
 use_frameworks!
 
 target 'YOUR_TARGET_NAME' do
-pod 'BtownToolkit'
+    pod 'BtownToolkit'
 end
 ```
 Replace `YOUR_TARGET_NAME` and then, in the `Podfile` directory, type:
