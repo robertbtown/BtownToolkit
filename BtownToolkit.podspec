@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.name             = 'BtownToolkit'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'This toolkit simplifies the lives for developers by supplying easy to use and components and tools needed in our everyday code creation.'
 
   s.description      = <<-DESC
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'BtownToolkit/Classes/**/*'
 
-  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit','ObjectiveC'
 end
