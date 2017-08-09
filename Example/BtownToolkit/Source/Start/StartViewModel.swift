@@ -16,6 +16,7 @@ struct StartViewModel {
     init() {
         featureItems = [
             .AlertView,
+            .ActionSheet,
             .ScrollableImageView,
             .ImageCropSelectionView
         ]

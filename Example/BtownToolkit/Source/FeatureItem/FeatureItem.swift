@@ -10,6 +10,7 @@ import UIKit
 
 enum FeatureItem {
     case AlertView
+    case ActionSheet
     case ScrollableImageView
     case ImageCropSelectionView
 }
@@ -19,6 +20,8 @@ extension FeatureItem {
         switch self {
         case .AlertView:
             return "AlertView"
+        case .ActionSheet:
+            return "ActionSheet"
         case .ScrollableImageView:
             return "ScrollableImageView"
         case .ImageCropSelectionView:
@@ -28,6 +31,8 @@ extension FeatureItem {
     var shortInfoText: String {
         switch self {
         case .AlertView:
+            return "Simplyfies UIAlertController."
+        case .ActionSheet:
             return "Simplyfies UIAlertController."
         case .ScrollableImageView:
             return "Zoomable and scrollable ImageView."
@@ -40,6 +45,8 @@ extension FeatureItem {
         switch self {
         case .AlertView:
             return "AlertViewScreen"
+        case .ActionSheet:
+            return "ActionSheetScreen"
         case .ScrollableImageView:
             return "ScrollabelImageViewScreen"
         case .ImageCropSelectionView:

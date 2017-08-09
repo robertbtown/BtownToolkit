@@ -21,6 +21,7 @@
 		FCB53C2C1D9832D500835F90 /* AlertViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */; };
 		FCB53C2F1D99873E00835F90 /* FeatureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C2E1D99873E00835F90 /* FeatureItem.swift */; };
 		FCB53C311D9FC39600835F90 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C301D9FC39600835F90 /* StartViewController.swift */; };
+		FCD9C33E1F3B7C95002A27A1 /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD9C33D1F3B7C95002A27A1 /* ActionSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewViewController.swift; path = Source/AlertView/AlertViewViewController.swift; sourceTree = "<group>"; };
 		FCB53C2E1D99873E00835F90 /* FeatureItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureItem.swift; path = Source/FeatureItem/FeatureItem.swift; sourceTree = "<group>"; };
 		FCB53C301D9FC39600835F90 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = Source/Start/StartViewController.swift; sourceTree = "<group>"; };
+		FCD9C33D1F3B7C95002A27A1 /* ActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionSheetViewController.swift; path = Source/ActionSheet/ActionSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				FCB53C2D1D9986EE00835F90 /* FeatureItem */,
 				FC4B4D1A1DAD239100A76A5B /* ImageView */,
 				FCB53C2A1D9832A200835F90 /* AlertView */,
+				FCD9C33C1F3B7C66002A27A1 /* ActionSheet */,
 				FC2C8C1F1D8FBE9B00C1CC81 /* ListItems */,
 				FC2C8C1C1D8FBD7700C1CC81 /* Start */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -217,6 +220,14 @@
 			name = FeatureItem;
 			sourceTree = "<group>";
 		};
+		FCD9C33C1F3B7C66002A27A1 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				FCD9C33D1F3B7C95002A27A1 /* ActionSheetViewController.swift */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,10 +284,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 986XMZ4AVT;
 						LastSwiftMigration = 0800;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 986XMZ4AVT;
 						LastSwiftMigration = 0800;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -425,6 +438,7 @@
 				FCB53C2C1D9832D500835F90 /* AlertViewViewController.swift in Sources */,
 				FC4B4D201DAD374200A76A5B /* ImageCropSelectionViewViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FCD9C33E1F3B7C95002A27A1 /* ActionSheetViewController.swift in Sources */,
 				FCB53C2F1D99873E00835F90 /* FeatureItem.swift in Sources */,
 				FCB53C311D9FC39600835F90 /* StartViewController.swift in Sources */,
 			);
@@ -561,12 +575,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				INFOPLIST_FILE = BtownToolkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -576,12 +593,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				INFOPLIST_FILE = BtownToolkit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -590,6 +610,7 @@
 			baseConfigurationReference = 2CE70D3BCA9C6F11D5E49580 /* Pods-BtownToolkit_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -611,6 +632,7 @@
 			baseConfigurationReference = 978E69A9FF17ABA44801FC17 /* Pods-BtownToolkit_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

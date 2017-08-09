@@ -15,14 +15,16 @@
 		8DF17F3C01A297CC77E572BB47534273 /* Pods-BtownToolkit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD07C37CDEF36F803E2373E76E7DF01 /* Pods-BtownToolkit_Tests-dummy.m */; };
 		94FB33B88D577D8177151A3A75A64432 /* BtownToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3738FAF98F5757EF068C07B92CB79F37 /* BtownToolkit-dummy.m */; };
 		A941CA333226DB8ED3BC0B1D5FA8B676 /* Pods-BtownToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A747600291EE6424A6776835F2B906B /* Pods-BtownToolkit_Example-dummy.m */; };
-		C234036CB1941E4A0504180248394B80 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AFE6F10A0297D587FF5F1D568C03FD /* ReplaceMe.swift */; };
 		F70083E4C2597728E82EDBC1D6977038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		FC4B4D191DACEC9000A76A5B /* ScrollableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */; };
 		FC4B4D1E1DAD2C1B00A76A5B /* ImageCropSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */; };
+		FC8998831F3B6EBA0040FFDD /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8998821F3B6EBA0040FFDD /* ActionSheet.swift */; };
+		FC8998861F3B6F820040FFDD /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8998851F3B6F820040FFDD /* ViewPresenter.swift */; };
 		FCB4BEAE1D8EF2F1003D6095 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAA1D8EF2F1003D6095 /* AlertView.swift */; };
 		FCB4BEAF1D8EF2F1003D6095 /* AlertViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAB1D8EF2F1003D6095 /* AlertViewAction.swift */; };
 		FCB4BEB01D8EF2F1003D6095 /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAC1D8EF2F1003D6095 /* AlertViewPresenter.swift */; };
 		FCB4BEB11D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAD1D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift */; };
+		FCD9C33B1F3B7139002A27A1 /* ActionSheetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD9C33A1F3B7139002A27A1 /* ActionSheetAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,6 @@
 		28A19C2E73019477240396E5C5099947 /* Pods-BtownToolkit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2B82565FE234A198B1878338D9A40D8D /* Pods-BtownToolkit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BtownToolkit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		35F7612F946A56408B53BD106C0CFE15 /* Pods-BtownToolkit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BtownToolkit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		36AFE6F10A0297D587FF5F1D568C03FD /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		3738FAF98F5757EF068C07B92CB79F37 /* BtownToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BtownToolkit-dummy.m"; sourceTree = "<group>"; };
 		39F7D55F9703AD395F5B94067C6C2E9B /* Pods-BtownToolkit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BtownToolkit_Example-umbrella.h"; sourceTree = "<group>"; };
 		3BD07C37CDEF36F803E2373E76E7DF01 /* Pods-BtownToolkit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BtownToolkit_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -70,10 +71,13 @@
 		EF3B3EF171100854FD78ECF03E28DF21 /* Pods-BtownToolkit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BtownToolkit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollableImageView.swift; path = Views/ImageView/ScrollableImageView.swift; sourceTree = "<group>"; };
 		FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCropSelectionView.swift; path = Views/ImageView/ImageCropSelectionView.swift; sourceTree = "<group>"; };
+		FC8998821F3B6EBA0040FFDD /* ActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = Views/ActionSheet/ActionSheet.swift; sourceTree = "<group>"; };
+		FC8998851F3B6F820040FFDD /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewPresenter.swift; path = Views/Presenter/ViewPresenter.swift; sourceTree = "<group>"; };
 		FCB4BEAA1D8EF2F1003D6095 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = Views/AlertView/AlertView.swift; sourceTree = "<group>"; };
 		FCB4BEAB1D8EF2F1003D6095 /* AlertViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewAction.swift; path = Views/AlertView/AlertViewAction.swift; sourceTree = "<group>"; };
 		FCB4BEAC1D8EF2F1003D6095 /* AlertViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewPresenter.swift; path = Views/AlertView/AlertViewPresenter.swift; sourceTree = "<group>"; };
 		FCB4BEAD1D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewTextFieldInfo.swift; path = Views/AlertView/AlertViewTextFieldInfo.swift; sourceTree = "<group>"; };
+		FCD9C33A1F3B7139002A27A1 /* ActionSheetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionSheetAction.swift; path = Views/ActionSheet/ActionSheetAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				FCB4BEA81D8EF2A5003D6095 /* Views */,
-				36AFE6F10A0297D587FF5F1D568C03FD /* ReplaceMe.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -244,11 +247,30 @@
 			name = ImageView;
 			sourceTree = "<group>";
 		};
+		FC8998811F3B6E1F0040FFDD /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				FC8998821F3B6EBA0040FFDD /* ActionSheet.swift */,
+				FCD9C33A1F3B7139002A27A1 /* ActionSheetAction.swift */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
+		FC8998841F3B6F5D0040FFDD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC8998851F3B6F820040FFDD /* ViewPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
 		FCB4BEA81D8EF2A5003D6095 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC8998841F3B6F5D0040FFDD /* Presenter */,
 				FC4B4D171DACEC6300A76A5B /* ImageView */,
 				FCB4BEA91D8EF2AE003D6095 /* AlertView */,
+				FC8998811F3B6E1F0040FFDD /* ActionSheet */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -379,12 +401,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8998861F3B6F820040FFDD /* ViewPresenter.swift in Sources */,
 				FCB4BEB01D8EF2F1003D6095 /* AlertViewPresenter.swift in Sources */,
 				FCB4BEB11D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift in Sources */,
 				94FB33B88D577D8177151A3A75A64432 /* BtownToolkit-dummy.m in Sources */,
+				FC8998831F3B6EBA0040FFDD /* ActionSheet.swift in Sources */,
+				FCD9C33B1F3B7139002A27A1 /* ActionSheetAction.swift in Sources */,
 				FC4B4D191DACEC9000A76A5B /* ScrollableImageView.swift in Sources */,
 				FCB4BEAF1D8EF2F1003D6095 /* AlertViewAction.swift in Sources */,
-				C234036CB1941E4A0504180248394B80 /* ReplaceMe.swift in Sources */,
 				FCB4BEAE1D8EF2F1003D6095 /* AlertView.swift in Sources */,
 				FC4B4D1E1DAD2C1B00A76A5B /* ImageCropSelectionView.swift in Sources */,
 			);
