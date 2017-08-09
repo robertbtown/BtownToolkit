@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'BtownToolkit/Classes/**/*'
 
-  s.frameworks = 'UIKit','ObjectiveC'
+  s.frameworks = 'UIKit'
 end
