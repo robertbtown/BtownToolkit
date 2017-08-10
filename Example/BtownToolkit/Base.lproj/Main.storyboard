@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -183,21 +182,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHR-pD-PHF">
-                                <rect key="frame" x="115" y="318.5" width="144" height="30"/>
-                                <state key="normal" title="Try normal alert view"/>
+                                <rect key="frame" x="131" y="318.5" width="112" height="30"/>
+                                <state key="normal" title="Try Action sheet"/>
                                 <connections>
-                                    <action selector="showActionSheet" destination="f61-yG-N8j" eventType="touchUpInside" id="Zaw-e5-wdN"/>
-                                    <action selector="showNormalAlertView" destination="foY-HK-Fzi" eventType="touchUpInside" id="a87-CH-DqZ"/>
+                                    <action selector="showActionSheetFromButton" destination="f61-yG-N8j" eventType="touchUpInside" id="Ikp-wB-Q8T"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-5B-L4N">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Action sheet" id="Olf-K4-e8I">
+                                        <connections>
+                                            <action selector="showActionSheetFromBarButtonItem" destination="f61-yG-N8j" id="Qdt-Ws-Tzr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mHR-pD-PHF" firstAttribute="centerY" secondItem="qdN-2O-FZs" secondAttribute="centerY" id="3rl-7Y-sES"/>
+                            <constraint firstItem="QNT-5B-L4N" firstAttribute="leading" secondItem="qdN-2O-FZs" secondAttribute="leadingMargin" constant="-16" id="7BI-vu-A3V"/>
                             <constraint firstItem="mHR-pD-PHF" firstAttribute="centerX" secondItem="qdN-2O-FZs" secondAttribute="centerX" id="E8s-C1-V7U"/>
+                            <constraint firstItem="2XD-62-hMf" firstAttribute="top" secondItem="QNT-5B-L4N" secondAttribute="bottom" id="HQB-GR-cih"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QNT-5B-L4N" secondAttribute="trailing" constant="-16" id="Veq-qM-W8Q"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="actionSheetBarButtonItem" destination="Olf-K4-e8I" id="OFe-0d-PSZ"/>
                         <outlet property="actionSheetButton" destination="mHR-pD-PHF" id="0XO-Gb-OmU"/>
                     </connections>
                 </viewController>

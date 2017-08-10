@@ -44,8 +44,19 @@ public class ActionSheet {
      */
     public var wasDismissedClosure: (() -> ())?
 
+
+    /**
+     If ActionSheet is presented on an iPad you need to set either presentFromView or 
+     presentFromBarButtonItem. The ActionSheet will then appear from that frame with 
+     an arrow pointing to it.
+     */
     public var presentFromView: UIView?
 
+    /**
+     If ActionSheet is presented on an iPad you need to set either presentFromView or
+     presentFromBarButtonItem. The ActionSheet will then appear from that frame with
+     an arrow pointing to it.
+     */
     public var presentFromBarButtonItem: UIBarButtonItem?
 
     public init(title: String?, message: String?) {
@@ -115,16 +126,21 @@ public class ActionSheet {
             alertController.addAction(otherAlertAction)
         }
 
+        var sourceView: UIView?
         if let presentFromBarButtonItem = self.presentFromBarButtonItem {
-            alertController.popoverPresentationController?.barButtonItem = presentFromBarButtonItem
+            sourceView = presentFromBarButtonItem.value(forKey: "view") as? UIView
         } else if let presentFromView = self.presentFromView {
-            let aFrame = presentFromView.convert(presentFromView.bounds, to: sharedPresenter.viewPresenterVC.view)
+            sourceView = presentFromView
+        }
+
+        if let sourceView = sourceView {
+            let aFrame = sourceView.convert(sourceView.bounds, to: sharedPresenter.viewPresenterVC.view)
             if self.ipadInternalPresentFromView == nil {
                 let ipadInternalPresentFromView = UIView()
                 sharedPresenter.viewPresenterVC.view.addSubview(ipadInternalPresentFromView)
                 self.ipadInternalPresentFromView = ipadInternalPresentFromView
             }
-            if let ipadInternalPresentFromView = self.ipadInternalPresentFromView {
+            if let ipadInternalPresentFromView = ipadInternalPresentFromView {
                 ipadInternalPresentFromView.frame = aFrame
                 ipadInternalPresentFromView.isHidden = true
                 alertController.popoverPresentationController?.sourceView = ipadInternalPresentFromView

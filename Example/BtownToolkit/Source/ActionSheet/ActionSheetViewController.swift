@@ -11,6 +11,7 @@ import BtownToolkit
 
 class ActionSheetViewController: UIViewController {
 
+    @IBOutlet var actionSheetBarButtonItem: UIBarButtonItem!
     @IBOutlet var actionSheetButton: UIButton!
 
     override func viewDidLoad() {
@@ -19,9 +20,20 @@ class ActionSheetViewController: UIViewController {
         ActionSheet.prefersStatusBarHidden = false
     }
 
-    @IBAction func showActionSheet() {
-        let actionSheet = ActionSheet(title: "Some title", message: "Some message")
+    @IBAction func showActionSheetFromButton() {
+        let actionSheet = createActionSheet()
         actionSheet.presentFromView = self.actionSheetButton
+        actionSheet.show()
+    }
+
+    @IBAction func showActionSheetFromBarButtonItem() {
+        let actionSheet = createActionSheet()
+        actionSheet.presentFromBarButtonItem = self.actionSheetBarButtonItem
+        actionSheet.show()
+    }
+    
+    private func createActionSheet() -> ActionSheet {
+        let actionSheet = ActionSheet(title: "Some title", message: "Some message")
         actionSheet.addAction(title: "Main Action", actionType: .normal) {
             print("User tapped main action")
         }
@@ -34,6 +46,6 @@ class ActionSheetViewController: UIViewController {
         actionSheet.wasDismissedClosure = {
             print("ActionSheet was dismissed.")
         }
-        actionSheet.show()
+        return actionSheet
     }
 }
