@@ -16,8 +16,6 @@ class AlertViewViewController: UIViewController, BTWLocalize {
 
         // Localized title string
         title = btwClassString("Title")
-
-        AlertView.prefersStatusBarHidden = false
     }
 
     @IBAction func showNormalAlertView() {

@@ -22,7 +22,6 @@ public protocol LoadingViewProtocol {
     /// It will default to zero on init.
     var completionPercentage: Float? { get set }
 
-    
     /// Creates an instance of the LoadingView.
     /// All parameters in are optional except for the view.
     /// This view is where you can add your custom views to display loading.
@@ -35,17 +34,14 @@ public protocol LoadingViewProtocol {
     ///   - completionErrorText: A error text to show when loading is done with errors
     init(withView view: UIView, loadingText: String?, completionSuccessText: String?, completionErrorText: String?)
 
-    
-    /// Every time the container view get a new layout this function is called. 
+    /// Every time the container view get a new layout this function is called.
     /// Update the layout of your views in this function.
     func viewChangedLayout()
-    
-    
+
     /// When this function is called you should set your loading view in a loading state.
     /// When this function gets called the container view will be presented and show your views.
     func startLoading()
-    
-    
+
     /// When this function is called you should stop your loading view from loading.
     /// If withCompletionState is true then the loading view will not be dismissed directly.
     /// Instead you should change it to display a completion state.
@@ -55,7 +51,7 @@ public protocol LoadingViewProtocol {
     ///   - withCompletionState: Indicates if a completion state should be shown after loading has stopped
     ///   - autoDismissDelay: The delay until the loading view will be dismissed.
     ///   - withError: Indicates if the loading was stopped with an error, meaning you should show an error state
-    ///   - completionClosure: This block must be called. Call it after you are done with any potential code to hide your view. 
+    ///   - completionClosure: This block must be called. Call it after you are done with any potential code to hide your view.
     func stopLoading(withCompletionState: Bool, autoDismissDelay: TimeInterval, withError: Bool, completionClosure: @escaping CompletionClosure)
 }
 
@@ -108,7 +104,7 @@ class LoadingViewViewController: UIViewController {
     }
 
     override var prefersStatusBarHidden: Bool {
-        return ViewPresenter.prefersStatusBarHidden
+        return UIApplication.shared.isStatusBarHidden
     }
 }
 

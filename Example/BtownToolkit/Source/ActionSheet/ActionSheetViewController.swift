@@ -19,8 +19,6 @@ class ActionSheetViewController: UIViewController, BTWLocalize {
 
         // Localized title string
         title = btwClassString("Title")
-
-        ActionSheet.prefersStatusBarHidden = false
     }
 
     @IBAction func showActionSheetFromButton() {

@@ -30,16 +30,6 @@ public class ActionSheet {
     private var ipadInternalPresentFromView: UIView?
 
     /**
-     Toggle if StatusBar should be hidden or shown when presenting
-     alertView. By default StatusBar is shown.
-     */
-    public static var prefersStatusBarHidden = ViewPresenter.prefersStatusBarHidden {
-        didSet {
-            ViewPresenter.prefersStatusBarHidden = prefersStatusBarHidden
-        }
-    }
-
-    /**
      If set then this closure is called when the AlertView disappears.
      */
     public var wasDismissedClosure: (() -> ())?

@@ -19,33 +19,27 @@ public enum AlertViewActionType {
 }
 
 public class AlertView {
-    
+
     let title: String
     let message: String?
-    
+
     private var destructiveAction: AlertViewAction?
     private var cancelAction: AlertViewAction?
-    
+
     private var otherActions = [AlertViewAction]()
     private var textFieldInfos = [AlertViewTextFieldInfo]()
-    private var textFieldInfoMapper = [String:UITextField]()
-    
-    /**
-        Toggle if StatusBar should be hidden or shown when presenting
-        alertView. By default StatusBar is shown.
-     */
-    public static var prefersStatusBarHidden = false
-    
+    private var textFieldInfoMapper = [String: UITextField]()
+
     /**
         If set then this closure is called when the AlertView disappears.
      */
     public var wasDismissedClosure: (() -> ())?
-    
+
     public init(title: String?, message: String?) {
         self.title = title ?? ""
         self.message = message
     }
-    
+
     deinit {
         if let wasDismissedClosure = wasDismissedClosure {
             DispatchQueue.main.async {
@@ -53,7 +47,7 @@ public class AlertView {
             }
         }
     }
-    
+
     /**
         Add an action button to AlertView.
      
@@ -72,7 +66,7 @@ public class AlertView {
             otherActions.append(action)
         }
     }
-    
+
     /**
         Add a TextField to AlertView. TextField can later be retrieved using
         the identifier string. Add all wanted configuration of TextField in the configurationsBlock.
@@ -84,7 +78,7 @@ public class AlertView {
         let textFieldInfo = AlertViewTextFieldInfo(identifier: identifier, configurationsClosure: configurationsClosure)
         textFieldInfos.append(textFieldInfo)
     }
-    
+
     /**
         Retrieves a TextField with a given identifier.
         If no textField with the givien identifier was added, then returns nil.
@@ -94,15 +88,15 @@ public class AlertView {
     public func textFieldForIdentifier(_ identifier: String) -> UITextField? {
         return textFieldInfoMapper[identifier]
     }
-    
+
     /**
         Triggers the AlertView to show
      */
     public func show() {
-        
+
         let sharedPresenter = AlertViewPresenter.sharedPresenter
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
+
         if let destructiveAction = self.destructiveAction {
             let destructiveAlertAction = UIAlertAction(title: destructiveAction.title, style: .destructive, handler: { _ in
                 sharedPresenter.didDismissAlertViewController()
@@ -110,7 +104,7 @@ public class AlertView {
             })
             alertController.addAction(destructiveAlertAction)
         }
-        
+
         if let cancelAction = self.cancelAction {
             let cancelAlertAction = UIAlertAction(title: cancelAction.title, style: .cancel, handler: { _ in
                 sharedPresenter.didDismissAlertViewController()
@@ -118,7 +112,7 @@ public class AlertView {
             })
             alertController.addAction(cancelAlertAction)
         }
-        
+
         for otherAction in otherActions {
             let otherAlertAction = UIAlertAction(title: otherAction.title, style: .default, handler: { _ in
                 sharedPresenter.didDismissAlertViewController()
@@ -126,7 +120,7 @@ public class AlertView {
             })
             alertController.addAction(otherAlertAction)
         }
-        
+
         textFieldInfoMapper.removeAll()
         for textFieldInfo in textFieldInfos {
             alertController.addTextField(configurationHandler: { [unowned self] (textField) in
@@ -140,7 +134,7 @@ public class AlertView {
             deallocated until AlertController gets deallocated.
          */
         objc_setAssociatedObject(alertController, "AlertViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        
+
         // Present the AlertController
         sharedPresenter.present(alertController, animated: true) { }
     }

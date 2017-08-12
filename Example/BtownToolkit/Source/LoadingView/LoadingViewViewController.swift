@@ -13,7 +13,7 @@ class LoadingViewViewController: UIViewController, BTWLocalize {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Localized title string
         title = btwClassString("Title")
     }
@@ -30,7 +30,7 @@ class LoadingViewViewController: UIViewController, BTWLocalize {
     @IBAction func showLoadingViewWithCompletion() {
         let loadingViewController = LoadingViewController(loadingText: "Loading...", completionText: "Completed!", completionErrorText: "Some error occured")
         loadingViewController.startLoading()
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             loadingViewController.stopLoadingWithCompletion()
         }

@@ -8,11 +8,11 @@
 
 import UIKit
 
-fileprivate typealias PresentObjectCompletionClosure = ()->()
+fileprivate typealias PresentObjectCompletionClosure = () -> ()
 
-fileprivate class ViewPresenterViewController : UIViewController {
+fileprivate class ViewPresenterViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
-        return ViewPresenter.prefersStatusBarHidden
+        return UIApplication.shared.isStatusBarHidden
     }
 }
 
@@ -21,7 +21,7 @@ fileprivate class ViewPresentObject {
     let animated: Bool
     let completionClosure: PresentObjectCompletionClosure?
     var previousPresentObject: ViewPresentObject?
-    
+
     init(viewController: UIViewController, animated: Bool, completionClosure: PresentObjectCompletionClosure?) {
         self.viewController = viewController
         self.animated = animated
@@ -29,19 +29,18 @@ fileprivate class ViewPresentObject {
     }
 }
 
-class ViewPresenter {
-    
-    typealias PresentVCCompletionClosure = ()->()
-    
+public class ViewPresenter {
+
+    typealias PresentVCCompletionClosure = () -> ()
+
     private let presenterWindow: UIWindow
     let viewPresenterVC: UIViewController
     private var presentObject: ViewPresentObject?
-    
+
     static let sharedPresenter = ViewPresenter()
-    
-    static var prefersStatusBarHidden = false
+
     static var newPresentationDismissesPrevFirst = false
-    
+
     /**
      Returns an ViewPresenter.
      Is it used to present UIViewControllers on a seperate UIWindow.
@@ -53,19 +52,19 @@ class ViewPresenter {
         let presenterWindow = UIWindow(frame: UIScreen.main.bounds)
         presenterWindow.windowLevel = UIWindowLevelAlert
         presenterWindow.backgroundColor = UIColor.clear
-        
+
         let viewPresenterVC = ViewPresenterViewController()
         presenterWindow.rootViewController = viewPresenterVC
-        
+
         presenterWindow.makeKeyAndVisible()
-        
+
         self.presenterWindow = presenterWindow;
         self.viewPresenterVC = viewPresenterVC;
     }
-    
+
     private func presentViewPresentObject(_ presentObject: ViewPresentObject) {
         presenterWindow.isHidden = false
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.01) { [unowned self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [unowned self] in
             let presenterVC: UIViewController
             if let prevVC = presentObject.previousPresentObject?.viewController, !ViewPresenter.newPresentationDismissesPrevFirst {
                 presenterVC = prevVC
@@ -75,10 +74,10 @@ class ViewPresenter {
             presenterVC.present(presentObject.viewController, animated: presentObject.animated, completion: presentObject.completionClosure)
         }
     }
-    
+
     func present(_ viewControllerToPresent: UIViewController, animated: Bool, completionClosure: PresentVCCompletionClosure? = nil) {
         let nextPresentObject = ViewPresentObject(viewController: viewControllerToPresent, animated: animated, completionClosure: completionClosure)
-        
+
         /**
          Check if a ViewController is already presented.
          If so then dismiss the one that is presented and store it
@@ -87,7 +86,7 @@ class ViewPresenter {
         if let presentObject = self.presentObject {
             nextPresentObject.previousPresentObject = presentObject;
             self.presentObject = nextPresentObject;
-            
+
             if ViewPresenter.newPresentationDismissesPrevFirst {
                 let previousViewController = nextPresentObject.previousPresentObject?.viewController
                 previousViewController?.dismiss(animated: animated, completion: { [unowned self] in
@@ -96,13 +95,12 @@ class ViewPresenter {
             } else {
                 self.presentViewPresentObject(nextPresentObject)
             }
-        }
-        else {
+        } else {
             self.presentObject = nextPresentObject;
             self.presentViewPresentObject(nextPresentObject)
         }
     }
-    
+
     func didDismissViewController() {
         if let previousPresentObject = self.presentObject?.previousPresentObject {
             self.presentObject = previousPresentObject
