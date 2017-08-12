@@ -19,6 +19,7 @@
 		FC48D4881F3F32A400D20388 /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48D4871F3F32A300D20388 /* LoadingViewViewController.swift */; };
 		FC4B4D1C1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1B1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift */; };
 		FC4B4D201DAD374200A76A5B /* ImageCropSelectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */; };
+		FC8C4A371F3F7793007A57E7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC8C4A361F3F7793007A57E7 /* Localizable.strings */; };
 		FCB53C2C1D9832D500835F90 /* AlertViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */; };
 		FCB53C2F1D99873E00835F90 /* FeatureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C2E1D99873E00835F90 /* FeatureItem.swift */; };
 		FCB53C311D9FC39600835F90 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C301D9FC39600835F90 /* StartViewController.swift */; };
@@ -59,6 +60,7 @@
 		FC48D4871F3F32A300D20388 /* LoadingViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingViewViewController.swift; path = Source/LoadingView/LoadingViewViewController.swift; sourceTree = "<group>"; };
 		FC4B4D1B1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollableImageViewViewController.swift; path = Source/ImageView/ScrollableImageViewViewController.swift; sourceTree = "<group>"; };
 		FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCropSelectionViewViewController.swift; path = Source/ImageView/ImageCropSelectionViewViewController.swift; sourceTree = "<group>"; };
+		FC8C4A361F3F7793007A57E7 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Resources/Localizable.strings; sourceTree = "<group>"; };
 		FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewViewController.swift; path = Source/AlertView/AlertViewViewController.swift; sourceTree = "<group>"; };
 		FCB53C2E1D99873E00835F90 /* FeatureItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeatureItem.swift; path = Source/FeatureItem/FeatureItem.swift; sourceTree = "<group>"; };
 		FCB53C301D9FC39600835F90 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = Source/Start/StartViewController.swift; sourceTree = "<group>"; };
@@ -129,8 +131,8 @@
 		607FACD21AFB9204008FA782 /* Example for BtownToolkit */ = {
 			isa = PBXGroup;
 			children = (
-				FC48D4861F3F329300D20388 /* LoadingView */,
 				FCB53C2D1D9986EE00835F90 /* FeatureItem */,
+				FC48D4861F3F329300D20388 /* LoadingView */,
 				FC4B4D1A1DAD239100A76A5B /* ImageView */,
 				FCB53C2A1D9832A200835F90 /* AlertView */,
 				FCD9C33C1F3B7C66002A27A1 /* ActionSheet */,
@@ -138,7 +140,7 @@
 				FC2C8C1C1D8FBD7700C1CC81 /* Start */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				FC8C4A351F3F76FB007A57E7 /* Resources */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -213,6 +215,15 @@
 				FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */,
 			);
 			name = ImageView;
+			sourceTree = "<group>";
+		};
+		FC8C4A351F3F76FB007A57E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				FC8C4A361F3F7793007A57E7 /* Localizable.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FCB53C2A1D9832A200835F90 /* AlertView */ = {
@@ -331,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				FC8C4A371F3F7793007A57E7 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);

@@ -9,14 +9,17 @@
 import UIKit
 import BtownToolkit
 
-class ActionSheetViewController: UIViewController {
+class ActionSheetViewController: UIViewController, BTWLocalize {
 
     @IBOutlet var actionSheetBarButtonItem: UIBarButtonItem!
     @IBOutlet var actionSheetButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "ActionSheet"
+
+        // Localized title string
+        title = btwClassString("Title")
+
         ActionSheet.prefersStatusBarHidden = false
     }
 
@@ -31,7 +34,7 @@ class ActionSheetViewController: UIViewController {
         actionSheet.presentFromBarButtonItem = self.actionSheetBarButtonItem
         actionSheet.show()
     }
-    
+
     private func createActionSheet() -> ActionSheet {
         let actionSheet = ActionSheet(title: "Some title", message: "Some message")
         actionSheet.addAction(title: "Main Action", actionType: .normal) {

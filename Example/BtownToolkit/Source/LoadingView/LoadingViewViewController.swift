@@ -9,15 +9,17 @@
 import UIKit
 import BtownToolkit
 
-class LoadingViewViewController: UIViewController {
+class LoadingViewViewController: UIViewController, BTWLocalize {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "LoadingView"
+        
+        // Localized title string
+        title = btwClassString("Title")
     }
 
     @IBAction func showLoadingViewNormal() {
-        let loadingViewController = LoadingViewController(loadingText: "Loading...", completionText: "Completed!", completionErrorText: "Some error occured")
+        let loadingViewController = LoadingViewController(loadingText: btwGeneralString("LoadingText"), completionText: btwGeneralString("LoadingCompletion"), completionErrorText: btwGeneralString("LoadingCompletionError"))
         loadingViewController.startLoading()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {

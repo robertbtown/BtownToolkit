@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  BtownToolkit
+
+  Created by Robert Magnusson on 2017-08-12.
+  Copyright © 2017 CocoaPods. All rights reserved.
+*/
+
+// General
+"LoadingText" = "Doing some loading...";
+"LoadingCompletion" = "Completed!";
+"LoadingCompletionError" = "Error!";
+
+// LoadingViewViewController
+"LoadingViewViewController.Title" = "This is the LoadingView";
+
+// ActionSheetViewController
+"ActionSheetViewController.Title" = "This is the ActionSheet";
+
+// AlertViewViewController
+"AlertViewViewController.Title" = "This is the AlertView";
+
+// ImageCropSelectionViewViewController
+"ImageCropSelectionViewViewController.Title" = "This is the ImageCrop";
+
+// ScrollableImageViewViewController
+"ScrollableImageViewViewController.Title" = "This is the ScrollableImageView";

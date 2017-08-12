@@ -9,17 +9,20 @@
 import UIKit
 import BtownToolkit
 
-class AlertViewViewController: UIViewController {
-    
+class AlertViewViewController: UIViewController, BTWLocalize {
+
     override func viewDidLoad() {
-         super.viewDidLoad()
-        title = "AlertView"
+        super.viewDidLoad()
+
+        // Localized title string
+        title = btwClassString("Title")
+
         AlertView.prefersStatusBarHidden = false
     }
-    
+
     @IBAction func showNormalAlertView() {
         let alertView = AlertView(title: "My normal AlertView", message: "Some information text about this alertview.")
-        alertView.addAction(title: "Main Action", actionType: .normal) { 
+        alertView.addAction(title: "Main Action", actionType: .normal) {
             print("User tapped main action")
         }
         alertView.addAction(title: "Cancel", actionType: .cancel) {
@@ -33,7 +36,7 @@ class AlertViewViewController: UIViewController {
         }
         alertView.show()
     }
-    
+
     @IBAction func showTextfiledAlertView() {
         let alertView = AlertView(title: "My textfield AlertView", message: "Some information text about this alertview.")
         alertView.addAction(title: "Main Action", actionType: .normal) {

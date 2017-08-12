@@ -9,13 +9,15 @@
 import UIKit
 import BtownToolkit
 
-class ScrollableImageViewViewController: UIViewController {
-    
+class ScrollableImageViewViewController: UIViewController, BTWLocalize {
+
     @IBOutlet var scrollableImageView: ScrollableImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "ScrollabelImageView"
+
+        // Localized title string
+        title = btwClassString("Title")
 
         scrollableImageView.image = UIImage(named: "BigImageExample")
         scrollableImageView.setImageZoomScaleToAspectFitViewSize()

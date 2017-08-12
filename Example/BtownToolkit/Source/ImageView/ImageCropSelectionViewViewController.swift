@@ -9,14 +9,16 @@
 import UIKit
 import BtownToolkit
 
-class ImageCropSelectionViewViewController: UIViewController {
-    
+class ImageCropSelectionViewViewController: UIViewController, BTWLocalize {
+
     @IBOutlet var imageCropSelectionView: ImageCropSelectionView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "ImageCropSelection"
-        
+
+        // Localized title string
+        title = btwClassString("Title")
+
         imageCropSelectionView.image = UIImage(named: "BigImageExample")
     }
 }

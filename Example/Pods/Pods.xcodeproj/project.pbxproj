@@ -7,49 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07745A4D5C4F1C6FD9B9C14A34D266E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		027E3BD84DE49A6CA713DC691A0B2630 /* BtownToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E34C9CA76339137B7B3161CD4C15FA /* BtownToolkit-dummy.m */; };
+		0349D792858E1FA849080F7D8150E81B /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FC9A02501BF1D0F5EC7184E59A6625 /* ViewPresenter.swift */; };
 		087094B1BAA99452C499DAA2D1B709B6 /* Pods-BtownToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A747600291EE6424A6776835F2B906B /* Pods-BtownToolkit_Example-dummy.m */; };
-		1EA73CDEC6AB1070153194AEE58B7A8E /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3598824C972603D0CB119DE5BCFC72 /* LoadingViewViewController.swift */; };
-		22A388AF5B572D0501A6607E71B38070 /* BtownToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C4CA7825AAECB1C8D11C1B1687B17E /* BtownToolkit-dummy.m */; };
-		25E0CDABDA5B1097605FCAFD2554EFEA /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A6746AD1412A7291CBAC028FC982016A /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B0EDD003BDE807F0DC1F79DFF84689D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		1408671752F849D61CEE559BBDB677F7 /* ImageCropSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEA67415A31843ECEA194E3BCF39C4 /* ImageCropSelectionView.swift */; };
+		20E1E4C67A78454D1A66E643D893C97B /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F3E12A9AFF22287263F4DCD66DE94A /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C5A82E564EB668251EC101B2B280809 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A9A8D534FFA9C449F7582802C646F7 /* CoreGraphics.framework */; };
-		34B01BFFA47F208F32EFDD1FA653E4CC /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA32FD3407620BC4362D88A442BB28 /* AlertViewPresenter.swift */; };
-		34EB0F46B57CB0972CE4088DADDF18BC /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CFBE824694323A4C3A0E1C3D718F2 /* PureLayout.framework */; };
+		35789816FE57BA3335F4810038620D14 /* AlertViewTextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03293694C693A0BF69EE649DDC1A98D0 /* AlertViewTextFieldInfo.swift */; };
 		3886D0B90E6591162417B5A1FB17E7F8 /* AngleGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E73D767A91C2C220901F5CFE55A720 /* AngleGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38D48502775D8E692694757536FE4FBD /* AlertViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B65FEED16B9EF5F3428ADDE631AD0 /* AlertViewAction.swift */; };
-		3C58668CCB22C4E1F1C9CE19E6562E69 /* AngleGradientLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A2B227EA2261F2DAEE411A682A5629 /* AngleGradientLayer.framework */; };
-		3E6AA7B9AE7C94E1920D45C814BAE81F /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1B3557D973E57C9A07E09F85059FDF /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41AFC398400722F2D001A9E83B0F4114 /* ScrollableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80CBE726986CB8052C25BDF0457AAC /* ScrollableImageView.swift */; };
-		42FA2E86544C2EECFB37B15AAA3297A2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EDAAC938D52E2324F099A98A895841 /* AlertView.swift */; };
-		4330D4B463A37995EF4127E6B27BF0E9 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243666983C5D5F0F92817F4014D59D9 /* ActionSheet.swift */; };
-		44B88ED78D30E2993B8E775E2545E01E /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6487F03C922CB5B49ECA762A51E1AA /* PureLayout-dummy.m */; };
 		4CBEB7C1CA88EDE771E559863CE8615C /* Pods-BtownToolkit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24799E4A5A917398AB789E158786892A /* Pods-BtownToolkit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E5A1452242C3CE1A4EB57FC8D06EDD2 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F3E12A9AFF22287263F4DCD66DE94A /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5E80AFA4B40F1B494AD8CDD960D584CB /* ActionSheetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24DD7CC9D7BFE4FA9849A759E802DDA /* ActionSheetAction.swift */; };
-		5E890334C11BDB0BE032D7CEE6D2B4CE /* ImageCropSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC056EF765A6F8C49292A37CB568B01 /* ImageCropSelectionView.swift */; };
-		603DD8D32716B7C95FEF3710C4DC6E5B /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C2DE8765FC5F6D0301600A7149922E /* ALView+PureLayout.m */; };
-		6AB36A20BCA02166E7524CA43426EC3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B572C16B16007016BA369C7E96BA7F /* UIKit.framework */; };
-		6DD8C4ED62D1AF8671EF6CDD23704726 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C64C1168209526D528C14B7A87E8E8B /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		550A3BF5A92ECEF83E8B6CE66EAFC41C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193B41D3CFF19A2129FECD9B3308A3AC /* LoadingViewController.swift */; };
+		57214DFD2B58C34FDF3EB9E663E53010 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA89145DDBD66E63BCCCF5E3452B848 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F6652C1F3DFA1932B2EAB289EB543BF /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A22F28AB36C9ECE62FEE6AF69245D1C8 /* AngleGradientLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		738D79B2838648CE96AB938E9C0F770F /* ScrollableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966D74BF663AD5FB4832D378216E4B0 /* ScrollableImageView.swift */; };
 		7712887C9CEBD32398044F44F51FA438 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
-		7AE26AD8D16C68A5FB6CB561049F158A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1C7521B3389EA644A7B79D7C11FBA /* LoadingViewController.swift */; };
-		81D31C984654A2ED1E35E1675D004DA3 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCDCB2A98EAC384E8A7F7C6D6CA9ACA /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78FD0B7892E930F27FCCC4088E447D8E /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCDCB2A98EAC384E8A7F7C6D6CA9ACA /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F0495AFC033FE62D50B02C2CB9EDA47 /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F4277D0AADE3993721BC0FAAC64FE /* LoadingViewViewController.swift */; };
+		809E9635A67843161DC7CC665E3B98D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
 		84EC9A02C35764F5E7DBE1BB9E1BFD14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E440BC6FFA7DCCD6C1965ADDDCD9609 /* QuartzCore.framework */; };
+		86F051ADCD3E67E68E85D778F589F821 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74ABEA798512D513DAB69D13C62AF9 /* AlertView.swift */; };
+		89D8F54E1C0159FDD74FC6A322ACFCE1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B572C16B16007016BA369C7E96BA7F /* UIKit.framework */; };
+		8AAA0E3EE4677BCECBDD49176D4CD0B5 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C2DE8765FC5F6D0301600A7149922E /* ALView+PureLayout.m */; };
 		8B0D3F53B6D062517F5A22ACF6DD26B7 /* AngleGradientLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F34761E40ED593C1377CC80411D2D703 /* AngleGradientLayer-dummy.m */; };
-		8D14F9CC8DB5738C92719F2A5A951AD1 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CC74C62FE28F3193BE17B4E189E72 /* ViewPresenter.swift */; };
+		8F7406AEA25AD1875AD134F4F8844B1B /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CFBE824694323A4C3A0E1C3D718F2 /* PureLayout.framework */; };
 		920E13E82426564F262132896AADB94D /* Pods-BtownToolkit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F7D55F9703AD395F5B94067C6C2E9B /* Pods-BtownToolkit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92F893CC184E2CF75F6F4AEAF51734DB /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA89145DDBD66E63BCCCF5E3452B848 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		926C2F290F688505B7E18279B7BDCCB9 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CA5F7DE430475EE78BF916484F53FD /* ActionSheet.swift */; };
+		92EB079575D329B349ECF5C2F7E5785B /* AlertViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319B8B09ABE9D9675A84A063145E7598 /* AlertViewAction.swift */; };
+		9F6FC7B3E7BC6ADC6AEED8F5E37C2A70 /* ActionSheetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D21A38A25BB8465B25860443E694D /* ActionSheetAction.swift */; };
 		A0182224A908D8AEAA161E4209250940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		A6076929606DB7CDF8C724AE7675383A /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264BBCA259977FAB2B70E9953CD8567 /* Localize.swift */; };
 		AA8844EE9E94DFB4515B73B6808408D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		AB1BBF4943A7A78A91CAD676C7462CCB /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6487F03C922CB5B49ECA762A51E1AA /* PureLayout-dummy.m */; };
 		AE3C7A2D278BFCD704E06BE5502CF5FC /* AngleGradientLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B7AE712D0771A081DE81E45C1EC117 /* AngleGradientLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBC6381C7F650F95D6EEA8CCD0606AC5 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1B01BED09E9C716531FB3001837F2 /* NSLayoutConstraint+PureLayout.m */; };
-		BDC29E6116CE4F7DA1BE6084090AC18E /* AlertViewTextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E0AE099B15F41EB4D4E983425AAE7B /* AlertViewTextFieldInfo.swift */; };
 		C07AF7D9925A7398F620F4165001A885 /* Pods-BtownToolkit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD07C37CDEF36F803E2373E76E7DF01 /* Pods-BtownToolkit_Tests-dummy.m */; };
-		D8EFF0A9497C6AF586041156EFBE6376 /* BtownToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58010F4C172B87551AFA80E80B4E51A8 /* BtownToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D98E15DCD33A35B4909FB44FA765DAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
-		E5CE9AB5622C927A2E6923879935843E /* DefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025706C76F1843F4F5A50F81CC4FE2F1 /* DefaultLoadingView.swift */; };
-		E83B5BD501F92AF5B814201A9D3FF5AD /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7C2FC57391B802C165DCA6FDC0CCA /* NSArray+PureLayout.m */; };
-		FBB90627A745C11F56D15825D12CED5F /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA9D4C6957475E1C1A18E2B92FAB753 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9991933F4EE78564D71B231D58B67FD /* BtownToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F743F52CEB028EA5B2322930C181703 /* BtownToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB5317D8DBABFB87D4F3A18102AA702F /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1B3557D973E57C9A07E09F85059FDF /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0B76CB174F9BBC86DD39B483D125B34 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A6746AD1412A7291CBAC028FC982016A /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF33353B6547B193295036C785EE6A0 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C64C1168209526D528C14B7A87E8E8B /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBAD595E130B5A43A7F260136D43C00E /* AngleGradientLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A2B227EA2261F2DAEE411A682A5629 /* AngleGradientLayer.framework */; };
+		EFB91C12B5A792809E5C15E0D6F6606E /* DefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE86895DE087A6028F7E5AEC93826E /* DefaultLoadingView.swift */; };
+		F948914303AC62B0987CF29370CADC35 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7C2FC57391B802C165DCA6FDC0CCA /* NSArray+PureLayout.m */; };
+		F9B578DC9E1BA49093F7CD0A8963BE8E /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1B01BED09E9C716531FB3001837F2 /* NSLayoutConstraint+PureLayout.m */; };
+		FB683CC70AB8EDB06E9AD3EED37C8AAC /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6DD0449A26D7A3B36E16870DB80AA /* AlertViewPresenter.swift */; };
+		FC79E6B76680964EEF1C7468369A4DCC /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA9D4C6957475E1C1A18E2B92FAB753 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 458AE0ECF63067F01DE7112D28E9CD1E;
+			remoteGlobalIDString = 2544C572F7C31AF7365880B744B6D67B;
+			remoteInfo = PureLayout;
+		};
+		426F35F4B51F18AF93A13C93ACC9CE08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65250FB7D2B22F10C919D46C1C1D4F4;
+			remoteInfo = AngleGradientLayer;
+		};
+		7E6737DDAF5C4A67F865712309CB1571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2544C572F7C31AF7365880B744B6D67B;
 			remoteInfo = PureLayout;
 		};
 		8D684AB259AF335F2D6E628D6C3C6652 /* PBXContainerItemProxy */ = {
@@ -71,47 +86,37 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AA567E722909DC3198DE3CC4D09E5BEB;
+			remoteGlobalIDString = 1086EC91633687624E984EB9A77BA156;
 			remoteInfo = BtownToolkit;
-		};
-		D38E1EC7C01CB688327487B328D8D36B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 458AE0ECF63067F01DE7112D28E9CD1E;
-			remoteInfo = PureLayout;
-		};
-		FCC253172C282CA6500CE1AC3D5BC9EA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D65250FB7D2B22F10C919D46C1C1D4F4;
-			remoteInfo = AngleGradientLayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025706C76F1843F4F5A50F81CC4FE2F1 /* DefaultLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLoadingView.swift; sourceTree = "<group>"; };
+		03293694C693A0BF69EE649DDC1A98D0 /* AlertViewTextFieldInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewTextFieldInfo.swift; sourceTree = "<group>"; };
 		04B572C16B16007016BA369C7E96BA7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		06F41E595E0334484477FCDC85BAC343 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
-		14FA32FD3407620BC4362D88A442BB28 /* AlertViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewPresenter.swift; sourceTree = "<group>"; };
-		16C4CA7825AAECB1C8D11C1B1687B17E /* BtownToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BtownToolkit-dummy.m"; sourceTree = "<group>"; };
+		18EEA67415A31843ECEA194E3BCF39C4 /* ImageCropSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageCropSelectionView.swift; sourceTree = "<group>"; };
+		193B41D3CFF19A2129FECD9B3308A3AC /* LoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		1966D74BF663AD5FB4832D378216E4B0 /* ScrollableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScrollableImageView.swift; sourceTree = "<group>"; };
 		19C2DE8765FC5F6D0301600A7149922E /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		1A747600291EE6424A6776835F2B906B /* Pods-BtownToolkit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BtownToolkit_Example-dummy.m"; sourceTree = "<group>"; };
 		1C34B4843A5578F2134048A0378B4FC3 /* BtownToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BtownToolkit.framework; path = BtownToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA89145DDBD66E63BCCCF5E3452B848 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
-		1E7FB407A1DAFB07D2F06B4B0997E465 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC1B01BED09E9C716531FB3001837F2 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		24799E4A5A917398AB789E158786892A /* Pods-BtownToolkit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BtownToolkit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		264D21A38A25BB8465B25860443E694D /* ActionSheetAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionSheetAction.swift; sourceTree = "<group>"; };
+		288014EEE6B183A17857509758CC8B3A /* BtownToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BtownToolkit.modulemap; sourceTree = "<group>"; };
 		28A19C2E73019477240396E5C5099947 /* Pods-BtownToolkit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2B82565FE234A198B1878338D9A40D8D /* Pods-BtownToolkit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BtownToolkit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BtownToolkit.xcconfig; sourceTree = "<group>"; };
-		2EC056EF765A6F8C49292A37CB568B01 /* ImageCropSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageCropSelectionView.swift; sourceTree = "<group>"; };
+		2F743F52CEB028EA5B2322930C181703 /* BtownToolkit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-umbrella.h"; sourceTree = "<group>"; };
+		30FE86895DE087A6028F7E5AEC93826E /* DefaultLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLoadingView.swift; sourceTree = "<group>"; };
+		319B8B09ABE9D9675A84A063145E7598 /* AlertViewAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewAction.swift; sourceTree = "<group>"; };
 		35A2B227EA2261F2DAEE411A682A5629 /* AngleGradientLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AngleGradientLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F7612F946A56408B53BD106C0CFE15 /* Pods-BtownToolkit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BtownToolkit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		39F7D55F9703AD395F5B94067C6C2E9B /* Pods-BtownToolkit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BtownToolkit_Example-umbrella.h"; sourceTree = "<group>"; };
 		3BA9D4C6957475E1C1A18E2B92FAB753 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		3BD07C37CDEF36F803E2373E76E7DF01 /* Pods-BtownToolkit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BtownToolkit_Tests-dummy.m"; sourceTree = "<group>"; };
+		3BF6DD0449A26D7A3B36E16870DB80AA /* AlertViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewPresenter.swift; sourceTree = "<group>"; };
 		3F0858E741C5ADD5D58F8AECCB92B460 /* Pods-BtownToolkit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BtownToolkit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4698F52E9B685434B253E43917189E20 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,10 +124,11 @@
 		50FC0622BDF00281F98CD12578694BEF /* Pods-BtownToolkit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BtownToolkit_Tests.modulemap"; sourceTree = "<group>"; };
 		518081346E9470EBC4D8F915361F8367 /* Pods-BtownToolkit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		550CF117A95ED2D7A100BF6D567CE9DF /* Pods-BtownToolkit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Tests-resources.sh"; sourceTree = "<group>"; };
-		58010F4C172B87551AFA80E80B4E51A8 /* BtownToolkit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-umbrella.h"; sourceTree = "<group>"; };
 		59B7AE712D0771A081DE81E45C1EC117 /* AngleGradientLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AngleGradientLayer-umbrella.h"; sourceTree = "<group>"; };
 		59E9D7973F0DEC2EDB9EF7024924A821 /* Pods-BtownToolkit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5C5F4277D0AADE3993721BC0FAAC64FE /* LoadingViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewViewController.swift; sourceTree = "<group>"; };
 		5ECB93AD1DBC7DBFF35D99E762C74BE7 /* Pods-BtownToolkit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		622E45A90DDF070BB1B76F8B333E1257 /* BtownToolkit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BtownToolkit.xcconfig; sourceTree = "<group>"; };
 		64FBB8A5EA5FE5FE2A3129EFC597E79A /* Pods-BtownToolkit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6C6487F03C922CB5B49ECA762A51E1AA /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		6C64C1168209526D528C14B7A87E8E8B /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
@@ -132,38 +138,34 @@
 		75A1AD2F1171201F805D9194091E7701 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E73D767A91C2C220901F5CFE55A720 /* AngleGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AngleGradientLayer.h; path = AngleGradient/AngleGradientLayer.h; sourceTree = "<group>"; };
 		7B16DF0CEE59232E0B819B1C8F3CE608 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BE63AE16C9A4F9523F4A9C9C341D928 /* BtownToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BtownToolkit.modulemap; sourceTree = "<group>"; };
 		7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
 		819C6CB96558649158DEE931BCAF68E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85F23EE0D53BABDCE70B6E065B7D9B28 /* AngleGradientLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AngleGradientLayer-prefix.pch"; sourceTree = "<group>"; };
-		91E0AE099B15F41EB4D4E983425AAE7B /* AlertViewTextFieldInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewTextFieldInfo.swift; sourceTree = "<group>"; };
+		85FC9A02501BF1D0F5EC7184E59A6625 /* ViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 		92526A4DD202029C005A21DE798B3296 /* Pods_BtownToolkit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BtownToolkit_Tests.framework; path = "Pods-BtownToolkit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E440BC6FFA7DCCD6C1965ADDDCD9609 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		9FAA02741690FBFE6D265B3E6F9D7464 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22F28AB36C9ECE62FEE6AF69245D1C8 /* AngleGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AngleGradientLayer.m; path = AngleGradient/AngleGradientLayer.m; sourceTree = "<group>"; };
-		A243666983C5D5F0F92817F4014D59D9 /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
 		A6746AD1412A7291CBAC028FC982016A /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
 		AA3CFBE824694323A4C3A0E1C3D718F2 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE80CBE726986CB8052C25BDF0457AAC /* ScrollableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScrollableImageView.swift; sourceTree = "<group>"; };
-		B26CC74C62FE28F3193BE17B4E189E72 /* ViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 		B4A9A8D534FFA9C449F7582802C646F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		C24DD7CC9D7BFE4FA9849A759E802DDA /* ActionSheetAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionSheetAction.swift; sourceTree = "<group>"; };
+		C13971310FC84D5D79299517D0EA789B /* BtownToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-prefix.pch"; sourceTree = "<group>"; };
+		C2E34C9CA76339137B7B3161CD4C15FA /* BtownToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BtownToolkit-dummy.m"; sourceTree = "<group>"; };
 		CBCDCB2A98EAC384E8A7F7C6D6CA9ACA /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		CDC7C2FC57391B802C165DCA6FDC0CCA /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		CE3BDDBE119591D40354877BCF8C6C63 /* Pods_BtownToolkit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BtownToolkit_Example.framework; path = "Pods-BtownToolkit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF1B3557D973E57C9A07E09F85059FDF /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
 		CFAA39F9331EF6AB6C924ED526AF889B /* Pods-BtownToolkit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D1B8D6CA4AB0D4CB6F8DA171875F77F9 /* BtownToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-prefix.pch"; sourceTree = "<group>"; };
 		D1F3E12A9AFF22287263F4DCD66DE94A /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		D6EDAAC938D52E2324F099A98A895841 /* AlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		D76998A4489A6A64681C15A910C56A14 /* AngleGradientLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AngleGradientLayer.framework; path = AngleGradientLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E22B65FEED16B9EF5F3428ADDE631AD0 /* AlertViewAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewAction.swift; sourceTree = "<group>"; };
+		DC74ABEA798512D513DAB69D13C62AF9 /* AlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		E264BBCA259977FAB2B70E9953CD8567 /* Localize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		E46F16876840C0FF2DFE6E95761C18F9 /* AngleGradientLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AngleGradientLayer.modulemap; sourceTree = "<group>"; };
-		EA3598824C972603D0CB119DE5BCFC72 /* LoadingViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewViewController.swift; sourceTree = "<group>"; };
 		EF3B3EF171100854FD78ECF03E28DF21 /* Pods-BtownToolkit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BtownToolkit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F0CA5F7DE430475EE78BF916484F53FD /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
 		F262B6372440CE13BDA7C56050415AD8 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
 		F34761E40ED593C1377CC80411D2D703 /* AngleGradientLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AngleGradientLayer-dummy.m"; sourceTree = "<group>"; };
-		FBB1C7521B3389EA644A7B79D7C11FBA /* LoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,11 +177,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		997FB145F6128D3BC1E38CD5F9256865 /* Frameworks */ = {
+		802523827EC5F1C4A9E459588A39BD8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98E15DCD33A35B4909FB44FA765DAB4 /* Foundation.framework in Frameworks */,
+				EBAD595E130B5A43A7F260136D43C00E /* AngleGradientLayer.framework in Frameworks */,
+				809E9635A67843161DC7CC665E3B98D6 /* Foundation.framework in Frameworks */,
+				8F7406AEA25AD1875AD134F4F8844B1B /* PureLayout.framework in Frameworks */,
+				89D8F54E1C0159FDD74FC6A322ACFCE1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,17 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7712887C9CEBD32398044F44F51FA438 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE46C9763F517AAF39ACABEE12D3F975 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C58668CCB22C4E1F1C9CE19E6562E69 /* AngleGradientLayer.framework in Frameworks */,
-				07745A4D5C4F1C6FD9B9C14A34D266E5 /* Foundation.framework in Frameworks */,
-				34EB0F46B57CB0972CE4088DADDF18BC /* PureLayout.framework in Frameworks */,
-				6AB36A20BCA02166E7524CA43426EC3D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,17 +206,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F683F697770176DBD5F20D84469544C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0EDD003BDE807F0DC1F79DFF84689D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DA3D44EDED61405023404AE4388DE32 /* ImageView */ = {
+		0D3BC1B9FF1F70B763FCD172EB3A5D6B /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
-				2EC056EF765A6F8C49292A37CB568B01 /* ImageCropSelectionView.swift */,
-				AE80CBE726986CB8052C25BDF0457AAC /* ScrollableImageView.swift */,
+				DC74ABEA798512D513DAB69D13C62AF9 /* AlertView.swift */,
+				319B8B09ABE9D9675A84A063145E7598 /* AlertViewAction.swift */,
+				3BF6DD0449A26D7A3B36E16870DB80AA /* AlertViewPresenter.swift */,
+				03293694C693A0BF69EE649DDC1A98D0 /* AlertViewTextFieldInfo.swift */,
 			);
-			name = ImageView;
-			path = BtownToolkit/Classes/Views/ImageView;
+			name = AlertView;
+			path = AlertView;
 			sourceTree = "<group>";
 		};
 		104C7231A9310B6E5A5D572A9C0097C1 /* Targets Support Files */ = {
@@ -234,16 +238,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		14245A7DCB697760CB07495F15F2ECE3 /* AlertView */ = {
+		13157B6EF4EA1F0AE856E7BDFA41F268 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				D6EDAAC938D52E2324F099A98A895841 /* AlertView.swift */,
-				E22B65FEED16B9EF5F3428ADDE631AD0 /* AlertViewAction.swift */,
-				14FA32FD3407620BC4362D88A442BB28 /* AlertViewPresenter.swift */,
-				91E0AE099B15F41EB4D4E983425AAE7B /* AlertViewTextFieldInfo.swift */,
+				85FC9A02501BF1D0F5EC7184E59A6625 /* ViewPresenter.swift */,
 			);
-			name = AlertView;
-			path = BtownToolkit/Classes/Views/AlertView;
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		1551C4811A5DC22765CDFF4D6778A6B5 /* AngleGradientLayer */ = {
@@ -255,30 +256,6 @@
 			);
 			name = AngleGradientLayer;
 			path = AngleGradientLayer;
-			sourceTree = "<group>";
-		};
-		3A1832C7677DDDF1310E6886EE95CDD0 /* ActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				A243666983C5D5F0F92817F4014D59D9 /* ActionSheet.swift */,
-				C24DD7CC9D7BFE4FA9849A759E802DDA /* ActionSheetAction.swift */,
-			);
-			name = ActionSheet;
-			path = BtownToolkit/Classes/Views/ActionSheet;
-			sourceTree = "<group>";
-		};
-		3D8CFEA7754FF673D6824EEE0B6F4BE2 /* BtownToolkit */ = {
-			isa = PBXGroup;
-			children = (
-				3A1832C7677DDDF1310E6886EE95CDD0 /* ActionSheet */,
-				14245A7DCB697760CB07495F15F2ECE3 /* AlertView */,
-				0DA3D44EDED61405023404AE4388DE32 /* ImageView */,
-				70DFF077C7E6CC611C26844F898D4C7C /* LoadingView */,
-				F783C60BDE7D40BE7176582178E10242 /* Presenter */,
-				A0B87E4DD914D50DC84B1BE87253D527 /* Support Files */,
-			);
-			name = BtownToolkit;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		3F0EB34CE7C0BEBFEB87D8829B377704 /* Products */ = {
@@ -311,27 +288,25 @@
 			path = "Target Support Files/Pods-BtownToolkit_Example";
 			sourceTree = "<group>";
 		};
-		70DFF077C7E6CC611C26844F898D4C7C /* LoadingView */ = {
-			isa = PBXGroup;
-			children = (
-				025706C76F1843F4F5A50F81CC4FE2F1 /* DefaultLoadingView.swift */,
-				FBB1C7521B3389EA644A7B79D7C11FBA /* LoadingViewController.swift */,
-				EA3598824C972603D0CB119DE5BCFC72 /* LoadingViewViewController.swift */,
-			);
-			name = LoadingView;
-			path = BtownToolkit/Classes/Views/LoadingView;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9D5B2E33ACDED06C06A5DDB08E157470 /* Development Pods */,
+				AA1CA378A34DCDA4EE68918D29256278 /* Development Pods */,
 				BDAC920864D4C2422AB4E05E4F9AA57B /* Frameworks */,
 				C115C2C5136668E09B0FACAD125D7DC9 /* Pods */,
 				3F0EB34CE7C0BEBFEB87D8829B377704 /* Products */,
 				104C7231A9310B6E5A5D572A9C0097C1 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7EEAD5E87320697139F99B8A6E3B82CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DEC80449671158DE1D35D56F0D054E01 /* Localize */,
+			);
+			name = Extensions;
+			path = BtownToolkit/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		83B18ACBEE154C5810F7766B36D06073 /* PureLayout */ = {
@@ -352,6 +327,33 @@
 			path = PureLayout;
 			sourceTree = "<group>";
 		};
+		8761BC6EB491A9E259DA1AA2762AA6DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB22395F18D7E5C09D9199E5EE2D0053 /* ActionSheet */,
+				0D3BC1B9FF1F70B763FCD172EB3A5D6B /* AlertView */,
+				B73BB6A442C24B4A591C8F077DAD6828 /* ImageView */,
+				FA73F565ABA0DD28523F1F6C5B7B08A5 /* LoadingView */,
+				13157B6EF4EA1F0AE856E7BDFA41F268 /* Presenter */,
+			);
+			name = Views;
+			path = BtownToolkit/Classes/Views;
+			sourceTree = "<group>";
+		};
+		95776DACB2B17A6FD0D1AE72E299C923 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				288014EEE6B183A17857509758CC8B3A /* BtownToolkit.modulemap */,
+				622E45A90DDF070BB1B76F8B333E1257 /* BtownToolkit.xcconfig */,
+				C2E34C9CA76339137B7B3161CD4C15FA /* BtownToolkit-dummy.m */,
+				C13971310FC84D5D79299517D0EA789B /* BtownToolkit-prefix.pch */,
+				2F743F52CEB028EA5B2322930C181703 /* BtownToolkit-umbrella.h */,
+				9FAA02741690FBFE6D265B3E6F9D7464 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BtownToolkit";
+			sourceTree = "<group>";
+		};
 		9590BCB74685709FC37ED93B7B6650FE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,26 +368,22 @@
 			path = "../Target Support Files/AngleGradientLayer";
 			sourceTree = "<group>";
 		};
-		9D5B2E33ACDED06C06A5DDB08E157470 /* Development Pods */ = {
+		AA1CA378A34DCDA4EE68918D29256278 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3D8CFEA7754FF673D6824EEE0B6F4BE2 /* BtownToolkit */,
+				C52BC865C564C11E152C7805D7522FA6 /* BtownToolkit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		A0B87E4DD914D50DC84B1BE87253D527 /* Support Files */ = {
+		B73BB6A442C24B4A591C8F077DAD6828 /* ImageView */ = {
 			isa = PBXGroup;
 			children = (
-				7BE63AE16C9A4F9523F4A9C9C341D928 /* BtownToolkit.modulemap */,
-				2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */,
-				16C4CA7825AAECB1C8D11C1B1687B17E /* BtownToolkit-dummy.m */,
-				D1B8D6CA4AB0D4CB6F8DA171875F77F9 /* BtownToolkit-prefix.pch */,
-				58010F4C172B87551AFA80E80B4E51A8 /* BtownToolkit-umbrella.h */,
-				1E7FB407A1DAFB07D2F06B4B0997E465 /* Info.plist */,
+				18EEA67415A31843ECEA194E3BCF39C4 /* ImageCropSelectionView.swift */,
+				1966D74BF663AD5FB4832D378216E4B0 /* ScrollableImageView.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BtownToolkit";
+			name = ImageView;
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 		B7F9A43D88F4434EAC250EC50C83FA28 /* Pods-BtownToolkit_Tests */ = {
@@ -439,13 +437,45 @@
 			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
-		F783C60BDE7D40BE7176582178E10242 /* Presenter */ = {
+		C52BC865C564C11E152C7805D7522FA6 /* BtownToolkit */ = {
 			isa = PBXGroup;
 			children = (
-				B26CC74C62FE28F3193BE17B4E189E72 /* ViewPresenter.swift */,
+				7EEAD5E87320697139F99B8A6E3B82CC /* Extensions */,
+				95776DACB2B17A6FD0D1AE72E299C923 /* Support Files */,
+				8761BC6EB491A9E259DA1AA2762AA6DC /* Views */,
 			);
-			name = Presenter;
-			path = BtownToolkit/Classes/Views/Presenter;
+			name = BtownToolkit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DB22395F18D7E5C09D9199E5EE2D0053 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				F0CA5F7DE430475EE78BF916484F53FD /* ActionSheet.swift */,
+				264D21A38A25BB8465B25860443E694D /* ActionSheetAction.swift */,
+			);
+			name = ActionSheet;
+			path = ActionSheet;
+			sourceTree = "<group>";
+		};
+		DEC80449671158DE1D35D56F0D054E01 /* Localize */ = {
+			isa = PBXGroup;
+			children = (
+				E264BBCA259977FAB2B70E9953CD8567 /* Localize.swift */,
+			);
+			name = Localize;
+			path = Localize;
+			sourceTree = "<group>";
+		};
+		FA73F565ABA0DD28523F1F6C5B7B08A5 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				30FE86895DE087A6028F7E5AEC93826E /* DefaultLoadingView.swift */,
+				193B41D3CFF19A2129FECD9B3308A3AC /* LoadingViewController.swift */,
+				5C5F4277D0AADE3993721BC0FAAC64FE /* LoadingViewViewController.swift */,
+			);
+			name = LoadingView;
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		FEA223F382C083B107F21F8A568405BD /* iOS */ = {
@@ -462,11 +492,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4C1C43E3AC46D86BCB331F377A8C6AD4 /* Headers */ = {
+		09DFCDEF6233BA1FCE2D024951E27F91 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8EFF0A9497C6AF586041156EFBE6376 /* BtownToolkit-umbrella.h in Headers */,
+				20E1E4C67A78454D1A66E643D893C97B /* ALView+PureLayout.h in Headers */,
+				DDF33353B6547B193295036C785EE6A0 /* NSArray+PureLayout.h in Headers */,
+				D0B76CB174F9BBC86DD39B483D125B34 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				FC79E6B76680964EEF1C7468369A4DCC /* PureLayout+Internal.h in Headers */,
+				57214DFD2B58C34FDF3EB9E663E53010 /* PureLayout-umbrella.h in Headers */,
+				78FD0B7892E930F27FCCC4088E447D8E /* PureLayout.h in Headers */,
+				CB5317D8DBABFB87D4F3A18102AA702F /* PureLayoutDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,17 +531,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7DE80C7F60B19841CDDF9BB40433F2D /* Headers */ = {
+		F842C8259E8F0DC2A0619F56AFD7A15C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5A1452242C3CE1A4EB57FC8D06EDD2 /* ALView+PureLayout.h in Headers */,
-				6DD8C4ED62D1AF8671EF6CDD23704726 /* NSArray+PureLayout.h in Headers */,
-				25E0CDABDA5B1097605FCAFD2554EFEA /* NSLayoutConstraint+PureLayout.h in Headers */,
-				FBB90627A745C11F56D15825D12CED5F /* PureLayout+Internal.h in Headers */,
-				92F893CC184E2CF75F6F4AEAF51734DB /* PureLayout-umbrella.h in Headers */,
-				81D31C984654A2ED1E35E1675D004DA3 /* PureLayout.h in Headers */,
-				3E6AA7B9AE7C94E1920D45C814BAE81F /* PureLayoutDefines.h in Headers */,
+				C9991933F4EE78564D71B231D58B67FD /* BtownToolkit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,13 +562,32 @@
 			productReference = CE3BDDBE119591D40354877BCF8C6C63 /* Pods_BtownToolkit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */ = {
+		1086EC91633687624E984EB9A77BA156 /* BtownToolkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FEE8F1783EAF70EDC98C314ABBF33855 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildConfigurationList = EE1C8A834F0E00097166C1B86A7713BF /* Build configuration list for PBXNativeTarget "BtownToolkit" */;
 			buildPhases = (
-				5878008814A69FDFBB0E58A7BACB9E44 /* Sources */,
-				997FB145F6128D3BC1E38CD5F9256865 /* Frameworks */,
-				F7DE80C7F60B19841CDDF9BB40433F2D /* Headers */,
+				5587C912CFAF3E4546C8FC98085365D0 /* Sources */,
+				802523827EC5F1C4A9E459588A39BD8B /* Frameworks */,
+				F842C8259E8F0DC2A0619F56AFD7A15C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B4963F41188082177669177B324929 /* PBXTargetDependency */,
+				ED62E215C94F852FD327E53A5F28DC26 /* PBXTargetDependency */,
+			);
+			name = BtownToolkit;
+			productName = BtownToolkit;
+			productReference = 1C34B4843A5578F2134048A0378B4FC3 /* BtownToolkit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2544C572F7C31AF7365880B744B6D67B /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09651E07F38CD67D340A4C34277BEB67 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				44081354F6B9DEA04E9A3E8703253C4F /* Sources */,
+				F683F697770176DBD5F20D84469544C3 /* Frameworks */,
+				09DFCDEF6233BA1FCE2D024951E27F91 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -547,25 +596,6 @@
 			name = PureLayout;
 			productName = PureLayout;
 			productReference = 4698F52E9B685434B253E43917189E20 /* PureLayout.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AA567E722909DC3198DE3CC4D09E5BEB /* BtownToolkit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EAF9A0A44D71ED5732EA06832E48106B /* Build configuration list for PBXNativeTarget "BtownToolkit" */;
-			buildPhases = (
-				E358AB666507B2F92D60B3FF740E85C4 /* Sources */,
-				BE46C9763F517AAF39ACABEE12D3F975 /* Frameworks */,
-				4C1C43E3AC46D86BCB331F377A8C6AD4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78E48F50B017B00B3B46DD54D9163A33 /* PBXTargetDependency */,
-				16AE903AA13434DDBE8CEB5159895861 /* PBXTargetDependency */,
-			);
-			name = BtownToolkit;
-			productName = BtownToolkit;
-			productReference = 1C34B4843A5578F2134048A0378B4FC3 /* BtownToolkit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C82872F0533CCD3E80FB84D95B9CAE4D /* Pods-BtownToolkit_Tests */ = {
@@ -624,10 +654,10 @@
 			projectRoot = "";
 			targets = (
 				D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */,
-				AA567E722909DC3198DE3CC4D09E5BEB /* BtownToolkit */,
+				1086EC91633687624E984EB9A77BA156 /* BtownToolkit */,
 				0718FBB7792DA4D10274CEC6D0385E10 /* Pods-BtownToolkit_Example */,
 				C82872F0533CCD3E80FB84D95B9CAE4D /* Pods-BtownToolkit_Tests */,
-				458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */,
+				2544C572F7C31AF7365880B744B6D67B /* PureLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -641,14 +671,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5878008814A69FDFBB0E58A7BACB9E44 /* Sources */ = {
+		44081354F6B9DEA04E9A3E8703253C4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				603DD8D32716B7C95FEF3710C4DC6E5B /* ALView+PureLayout.m in Sources */,
-				E83B5BD501F92AF5B814201A9D3FF5AD /* NSArray+PureLayout.m in Sources */,
-				BBC6381C7F650F95D6EEA8CCD0606AC5 /* NSLayoutConstraint+PureLayout.m in Sources */,
-				44B88ED78D30E2993B8E775E2545E01E /* PureLayout-dummy.m in Sources */,
+				8AAA0E3EE4677BCECBDD49176D4CD0B5 /* ALView+PureLayout.m in Sources */,
+				F948914303AC62B0987CF29370CADC35 /* NSArray+PureLayout.m in Sources */,
+				F9B578DC9E1BA49093F7CD0A8963BE8E /* NSLayoutConstraint+PureLayout.m in Sources */,
+				AB1BBF4943A7A78A91CAD676C7462CCB /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5587C912CFAF3E4546C8FC98085365D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926C2F290F688505B7E18279B7BDCCB9 /* ActionSheet.swift in Sources */,
+				9F6FC7B3E7BC6ADC6AEED8F5E37C2A70 /* ActionSheetAction.swift in Sources */,
+				86F051ADCD3E67E68E85D778F589F821 /* AlertView.swift in Sources */,
+				92EB079575D329B349ECF5C2F7E5785B /* AlertViewAction.swift in Sources */,
+				FB683CC70AB8EDB06E9AD3EED37C8AAC /* AlertViewPresenter.swift in Sources */,
+				35789816FE57BA3335F4810038620D14 /* AlertViewTextFieldInfo.swift in Sources */,
+				027E3BD84DE49A6CA713DC691A0B2630 /* BtownToolkit-dummy.m in Sources */,
+				EFB91C12B5A792809E5C15E0D6F6606E /* DefaultLoadingView.swift in Sources */,
+				1408671752F849D61CEE559BBDB677F7 /* ImageCropSelectionView.swift in Sources */,
+				550A3BF5A92ECEF83E8B6CE66EAFC41C /* LoadingViewController.swift in Sources */,
+				7F0495AFC033FE62D50B02C2CB9EDA47 /* LoadingViewViewController.swift in Sources */,
+				A6076929606DB7CDF8C724AE7675383A /* Localize.swift in Sources */,
+				738D79B2838648CE96AB938E9C0F770F /* ScrollableImageView.swift in Sources */,
+				0349D792858E1FA849080F7D8150E81B /* ViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,26 +709,6 @@
 			files = (
 				8B0D3F53B6D062517F5A22ACF6DD26B7 /* AngleGradientLayer-dummy.m in Sources */,
 				6F6652C1F3DFA1932B2EAB289EB543BF /* AngleGradientLayer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E358AB666507B2F92D60B3FF740E85C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4330D4B463A37995EF4127E6B27BF0E9 /* ActionSheet.swift in Sources */,
-				5E80AFA4B40F1B494AD8CDD960D584CB /* ActionSheetAction.swift in Sources */,
-				42FA2E86544C2EECFB37B15AAA3297A2 /* AlertView.swift in Sources */,
-				38D48502775D8E692694757536FE4FBD /* AlertViewAction.swift in Sources */,
-				34B01BFFA47F208F32EFDD1FA653E4CC /* AlertViewPresenter.swift in Sources */,
-				BDC29E6116CE4F7DA1BE6084090AC18E /* AlertViewTextFieldInfo.swift in Sources */,
-				22A388AF5B572D0501A6607E71B38070 /* BtownToolkit-dummy.m in Sources */,
-				E5CE9AB5622C927A2E6923879935843E /* DefaultLoadingView.swift in Sources */,
-				5E890334C11BDB0BE032D7CEE6D2B4CE /* ImageCropSelectionView.swift in Sources */,
-				7AE26AD8D16C68A5FB6CB561049F158A /* LoadingViewController.swift in Sources */,
-				1EA73CDEC6AB1070153194AEE58B7A8E /* LoadingViewViewController.swift in Sources */,
-				41AFC398400722F2D001A9E83B0F4114 /* ScrollableImageView.swift in Sources */,
-				8D14F9CC8DB5738C92719F2A5A951AD1 /* ViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,73 +723,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		16AE903AA13434DDBE8CEB5159895861 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PureLayout;
-			target = 458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */;
-			targetProxy = D38E1EC7C01CB688327487B328D8D36B /* PBXContainerItemProxy */;
-		};
 		20F2D5B176521D676DDFE78CC2E3B9F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AngleGradientLayer;
 			target = D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */;
 			targetProxy = 8D684AB259AF335F2D6E628D6C3C6652 /* PBXContainerItemProxy */;
 		};
-		78E48F50B017B00B3B46DD54D9163A33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AngleGradientLayer;
-			target = D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */;
-			targetProxy = FCC253172C282CA6500CE1AC3D5BC9EA /* PBXContainerItemProxy */;
-		};
 		96D86E97A371DADB9D220C7B31FB936B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BtownToolkit;
-			target = AA567E722909DC3198DE3CC4D09E5BEB /* BtownToolkit */;
+			target = 1086EC91633687624E984EB9A77BA156 /* BtownToolkit */;
 			targetProxy = 9D3B006F944FE703CF8AA8E7F2DA94DB /* PBXContainerItemProxy */;
+		};
+		B5B4963F41188082177669177B324929 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AngleGradientLayer;
+			target = D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */;
+			targetProxy = 426F35F4B51F18AF93A13C93ACC9CE08 /* PBXContainerItemProxy */;
 		};
 		C1C13E5AE2CC5DA8874B80FE886E9F55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PureLayout;
-			target = 458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */;
+			target = 2544C572F7C31AF7365880B744B6D67B /* PureLayout */;
 			targetProxy = 1DD1D06C7FFBEE30F404E70783D6DD85 /* PBXContainerItemProxy */;
+		};
+		ED62E215C94F852FD327E53A5F28DC26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 2544C572F7C31AF7365880B744B6D67B /* PureLayout */;
+			targetProxy = 7E6737DDAF5C4A67F865712309CB1571 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05EAA9CDF1A4A1CDFD6C33E443DA3EB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PureLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1AD5DCA202A098A50E2B503DFB112741 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CC732788F5368B49439DD88F0B045B2 /* AngleGradientLayer.xcconfig */;
@@ -830,7 +827,7 @@
 			};
 			name = Debug;
 		};
-		3CF55192610D4B69F64F68D5F49C70FF /* Release */ = {
+		46A07D0A4B3E825D2F148D0E03629760 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */;
 			buildSettings = {
@@ -864,9 +861,44 @@
 			};
 			name = Release;
 		};
-		51BA6E6FFEA99CB44E80EE899F20584E /* Release */ = {
+		6A36C72ECCC2C37F8A1B90CBF090B379 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */;
+			baseConfigurationReference = 622E45A90DDF070BB1B76F8B333E1257 /* BtownToolkit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BtownToolkit/BtownToolkit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BtownToolkit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BtownToolkit/BtownToolkit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BtownToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7BB64B679F43700A55CD7095906E6843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 622E45A90DDF070BB1B76F8B333E1257 /* BtownToolkit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -898,6 +930,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		9099C9641EBB8502A3F71E48BF9B6CFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1106,41 +1172,6 @@
 			};
 			name = Release;
 		};
-		F56AFEE30499702F074733752E40C0C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BtownToolkit/BtownToolkit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BtownToolkit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BtownToolkit/BtownToolkit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BtownToolkit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		F96ACD7E83665F6E802A9C08810EA09B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CC732788F5368B49439DD88F0B045B2 /* AngleGradientLayer.xcconfig */;
@@ -1178,6 +1209,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09651E07F38CD67D340A4C34277BEB67 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9099C9641EBB8502A3F71E48BF9B6CFF /* Debug */,
+				46A07D0A4B3E825D2F148D0E03629760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1214,20 +1254,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAF9A0A44D71ED5732EA06832E48106B /* Build configuration list for PBXNativeTarget "BtownToolkit" */ = {
+		EE1C8A834F0E00097166C1B86A7713BF /* Build configuration list for PBXNativeTarget "BtownToolkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F56AFEE30499702F074733752E40C0C9 /* Debug */,
-				51BA6E6FFEA99CB44E80EE899F20584E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FEE8F1783EAF70EDC98C314ABBF33855 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				05EAA9CDF1A4A1CDFD6C33E443DA3EB1 /* Debug */,
-				3CF55192610D4B69F64F68D5F49C70FF /* Release */,
+				6A36C72ECCC2C37F8A1B90CBF090B379 /* Debug */,
+				7BB64B679F43700A55CD7095906E6843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
