@@ -16,6 +16,7 @@
 		D76C1C547C2DC7EC7FDA177B /* Pods_BtownToolkit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A9B6B8A9EAB5377CDB1486 /* Pods_BtownToolkit_Example.framework */; };
 		FC2C8C211D8FBEFB00C1CC81 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8C201D8FBEFB00C1CC81 /* ListItem.swift */; };
 		FC2C8C231D8FC2E600C1CC81 /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2C8C221D8FC2E600C1CC81 /* StartViewModel.swift */; };
+		FC48D4881F3F32A400D20388 /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48D4871F3F32A300D20388 /* LoadingViewViewController.swift */; };
 		FC4B4D1C1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1B1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift */; };
 		FC4B4D201DAD374200A76A5B /* ImageCropSelectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */; };
 		FCB53C2C1D9832D500835F90 /* AlertViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */; };
@@ -55,6 +56,7 @@
 		F6D66372F9C163744F2D2310 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FC2C8C201D8FBEFB00C1CC81 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListItem.swift; path = Source/ListItems/ListItem.swift; sourceTree = "<group>"; };
 		FC2C8C221D8FC2E600C1CC81 /* StartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewModel.swift; path = Source/Start/StartViewModel.swift; sourceTree = "<group>"; };
+		FC48D4871F3F32A300D20388 /* LoadingViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingViewViewController.swift; path = Source/LoadingView/LoadingViewViewController.swift; sourceTree = "<group>"; };
 		FC4B4D1B1DAD23FD00A76A5B /* ScrollableImageViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollableImageViewViewController.swift; path = Source/ImageView/ScrollableImageViewViewController.swift; sourceTree = "<group>"; };
 		FC4B4D1F1DAD374200A76A5B /* ImageCropSelectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCropSelectionViewViewController.swift; path = Source/ImageView/ImageCropSelectionViewViewController.swift; sourceTree = "<group>"; };
 		FCB53C2B1D9832D500835F90 /* AlertViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewViewController.swift; path = Source/AlertView/AlertViewViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		607FACD21AFB9204008FA782 /* Example for BtownToolkit */ = {
 			isa = PBXGroup;
 			children = (
+				FC48D4861F3F329300D20388 /* LoadingView */,
 				FCB53C2D1D9986EE00835F90 /* FeatureItem */,
 				FC4B4D1A1DAD239100A76A5B /* ImageView */,
 				FCB53C2A1D9832A200835F90 /* AlertView */,
@@ -193,6 +196,14 @@
 				FC2C8C201D8FBEFB00C1CC81 /* ListItem.swift */,
 			);
 			name = ListItems;
+			sourceTree = "<group>";
+		};
+		FC48D4861F3F329300D20388 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				FC48D4871F3F32A300D20388 /* LoadingViewViewController.swift */,
+			);
+			name = LoadingView;
 			sourceTree = "<group>";
 		};
 		FC4B4D1A1DAD239100A76A5B /* ImageView */ = {
@@ -341,13 +352,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BtownToolkit_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		82B66502ACBF0082D57AA9D2 /* [CP] Copy Pods Resources */ = {
@@ -371,9 +385,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BtownToolkit_Example/Pods-BtownToolkit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AngleGradientLayer/AngleGradientLayer.framework",
+				"${BUILT_PRODUCTS_DIR}/BtownToolkit/BtownToolkit.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AngleGradientLayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BtownToolkit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -416,13 +437,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BtownToolkit_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -438,6 +462,7 @@
 				FCB53C2C1D9832D500835F90 /* AlertViewViewController.swift in Sources */,
 				FC4B4D201DAD374200A76A5B /* ImageCropSelectionViewViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				FC48D4881F3F32A400D20388 /* LoadingViewViewController.swift in Sources */,
 				FCD9C33E1F3B7C95002A27A1 /* ActionSheetViewController.swift in Sources */,
 				FCB53C2F1D99873E00835F90 /* FeatureItem.swift in Sources */,
 				FCB53C311D9FC39600835F90 /* StartViewController.swift in Sources */,
@@ -573,7 +598,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEDEE94B5A92158CE8CADD59 /* Pods-BtownToolkit_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				INFOPLIST_FILE = BtownToolkit/Info.plist;
@@ -591,7 +616,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 496CE313D39EBCE24E117D71 /* Pods-BtownToolkit_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				INFOPLIST_FILE = BtownToolkit/Info.plist;
@@ -609,7 +634,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CE70D3BCA9C6F11D5E49580 /* Pods-BtownToolkit_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -631,7 +656,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 978E69A9FF17ABA44801FC17 /* Pods-BtownToolkit_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 986XMZ4AVT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

@@ -7,107 +7,224 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E1EA09FA4A4497B6F3AF3BE010FD178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		295DE23742FF621724A73D1EF56C1E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		42F9051E76F33EE083EB8BE84049297A /* Pods-BtownToolkit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24799E4A5A917398AB789E158786892A /* Pods-BtownToolkit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A10A786680294E7314BAB2D5BBAF210 /* Pods-BtownToolkit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F7D55F9703AD395F5B94067C6C2E9B /* Pods-BtownToolkit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		831B7FEA92260F55AFAFF73483F250DC /* BtownToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2AE43D92BE109BBC4CD24A8A2783669 /* BtownToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DF17F3C01A297CC77E572BB47534273 /* Pods-BtownToolkit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD07C37CDEF36F803E2373E76E7DF01 /* Pods-BtownToolkit_Tests-dummy.m */; };
-		94FB33B88D577D8177151A3A75A64432 /* BtownToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3738FAF98F5757EF068C07B92CB79F37 /* BtownToolkit-dummy.m */; };
-		A941CA333226DB8ED3BC0B1D5FA8B676 /* Pods-BtownToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A747600291EE6424A6776835F2B906B /* Pods-BtownToolkit_Example-dummy.m */; };
-		F70083E4C2597728E82EDBC1D6977038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		FC4B4D191DACEC9000A76A5B /* ScrollableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */; };
-		FC4B4D1E1DAD2C1B00A76A5B /* ImageCropSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */; };
-		FC8998831F3B6EBA0040FFDD /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8998821F3B6EBA0040FFDD /* ActionSheet.swift */; };
-		FC8998861F3B6F820040FFDD /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8998851F3B6F820040FFDD /* ViewPresenter.swift */; };
-		FCB4BEAE1D8EF2F1003D6095 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAA1D8EF2F1003D6095 /* AlertView.swift */; };
-		FCB4BEAF1D8EF2F1003D6095 /* AlertViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAB1D8EF2F1003D6095 /* AlertViewAction.swift */; };
-		FCB4BEB01D8EF2F1003D6095 /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAC1D8EF2F1003D6095 /* AlertViewPresenter.swift */; };
-		FCB4BEB11D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4BEAD1D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift */; };
-		FCD9C33B1F3B7139002A27A1 /* ActionSheetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD9C33A1F3B7139002A27A1 /* ActionSheetAction.swift */; };
+		07745A4D5C4F1C6FD9B9C14A34D266E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		087094B1BAA99452C499DAA2D1B709B6 /* Pods-BtownToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A747600291EE6424A6776835F2B906B /* Pods-BtownToolkit_Example-dummy.m */; };
+		1EA73CDEC6AB1070153194AEE58B7A8E /* LoadingViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3598824C972603D0CB119DE5BCFC72 /* LoadingViewViewController.swift */; };
+		22A388AF5B572D0501A6607E71B38070 /* BtownToolkit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C4CA7825AAECB1C8D11C1B1687B17E /* BtownToolkit-dummy.m */; };
+		25E0CDABDA5B1097605FCAFD2554EFEA /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A6746AD1412A7291CBAC028FC982016A /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C5A82E564EB668251EC101B2B280809 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A9A8D534FFA9C449F7582802C646F7 /* CoreGraphics.framework */; };
+		34B01BFFA47F208F32EFDD1FA653E4CC /* AlertViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA32FD3407620BC4362D88A442BB28 /* AlertViewPresenter.swift */; };
+		34EB0F46B57CB0972CE4088DADDF18BC /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3CFBE824694323A4C3A0E1C3D718F2 /* PureLayout.framework */; };
+		3886D0B90E6591162417B5A1FB17E7F8 /* AngleGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E73D767A91C2C220901F5CFE55A720 /* AngleGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38D48502775D8E692694757536FE4FBD /* AlertViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22B65FEED16B9EF5F3428ADDE631AD0 /* AlertViewAction.swift */; };
+		3C58668CCB22C4E1F1C9CE19E6562E69 /* AngleGradientLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A2B227EA2261F2DAEE411A682A5629 /* AngleGradientLayer.framework */; };
+		3E6AA7B9AE7C94E1920D45C814BAE81F /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1B3557D973E57C9A07E09F85059FDF /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41AFC398400722F2D001A9E83B0F4114 /* ScrollableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80CBE726986CB8052C25BDF0457AAC /* ScrollableImageView.swift */; };
+		42FA2E86544C2EECFB37B15AAA3297A2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EDAAC938D52E2324F099A98A895841 /* AlertView.swift */; };
+		4330D4B463A37995EF4127E6B27BF0E9 /* ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243666983C5D5F0F92817F4014D59D9 /* ActionSheet.swift */; };
+		44B88ED78D30E2993B8E775E2545E01E /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C6487F03C922CB5B49ECA762A51E1AA /* PureLayout-dummy.m */; };
+		4CBEB7C1CA88EDE771E559863CE8615C /* Pods-BtownToolkit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24799E4A5A917398AB789E158786892A /* Pods-BtownToolkit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5A1452242C3CE1A4EB57FC8D06EDD2 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F3E12A9AFF22287263F4DCD66DE94A /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E80AFA4B40F1B494AD8CDD960D584CB /* ActionSheetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24DD7CC9D7BFE4FA9849A759E802DDA /* ActionSheetAction.swift */; };
+		5E890334C11BDB0BE032D7CEE6D2B4CE /* ImageCropSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC056EF765A6F8C49292A37CB568B01 /* ImageCropSelectionView.swift */; };
+		603DD8D32716B7C95FEF3710C4DC6E5B /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C2DE8765FC5F6D0301600A7149922E /* ALView+PureLayout.m */; };
+		6AB36A20BCA02166E7524CA43426EC3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B572C16B16007016BA369C7E96BA7F /* UIKit.framework */; };
+		6DD8C4ED62D1AF8671EF6CDD23704726 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C64C1168209526D528C14B7A87E8E8B /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F6652C1F3DFA1932B2EAB289EB543BF /* AngleGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A22F28AB36C9ECE62FEE6AF69245D1C8 /* AngleGradientLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7712887C9CEBD32398044F44F51FA438 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		7AE26AD8D16C68A5FB6CB561049F158A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1C7521B3389EA644A7B79D7C11FBA /* LoadingViewController.swift */; };
+		81D31C984654A2ED1E35E1675D004DA3 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCDCB2A98EAC384E8A7F7C6D6CA9ACA /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EC9A02C35764F5E7DBE1BB9E1BFD14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E440BC6FFA7DCCD6C1965ADDDCD9609 /* QuartzCore.framework */; };
+		8B0D3F53B6D062517F5A22ACF6DD26B7 /* AngleGradientLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F34761E40ED593C1377CC80411D2D703 /* AngleGradientLayer-dummy.m */; };
+		8D14F9CC8DB5738C92719F2A5A951AD1 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CC74C62FE28F3193BE17B4E189E72 /* ViewPresenter.swift */; };
+		920E13E82426564F262132896AADB94D /* Pods-BtownToolkit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F7D55F9703AD395F5B94067C6C2E9B /* Pods-BtownToolkit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92F893CC184E2CF75F6F4AEAF51734DB /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA89145DDBD66E63BCCCF5E3452B848 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0182224A908D8AEAA161E4209250940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		AA8844EE9E94DFB4515B73B6808408D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		AE3C7A2D278BFCD704E06BE5502CF5FC /* AngleGradientLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B7AE712D0771A081DE81E45C1EC117 /* AngleGradientLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBC6381C7F650F95D6EEA8CCD0606AC5 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1B01BED09E9C716531FB3001837F2 /* NSLayoutConstraint+PureLayout.m */; };
+		BDC29E6116CE4F7DA1BE6084090AC18E /* AlertViewTextFieldInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E0AE099B15F41EB4D4E983425AAE7B /* AlertViewTextFieldInfo.swift */; };
+		C07AF7D9925A7398F620F4165001A885 /* Pods-BtownToolkit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD07C37CDEF36F803E2373E76E7DF01 /* Pods-BtownToolkit_Tests-dummy.m */; };
+		D8EFF0A9497C6AF586041156EFBE6376 /* BtownToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58010F4C172B87551AFA80E80B4E51A8 /* BtownToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D98E15DCD33A35B4909FB44FA765DAB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */; };
+		E5CE9AB5622C927A2E6923879935843E /* DefaultLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025706C76F1843F4F5A50F81CC4FE2F1 /* DefaultLoadingView.swift */; };
+		E83B5BD501F92AF5B814201A9D3FF5AD /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC7C2FC57391B802C165DCA6FDC0CCA /* NSArray+PureLayout.m */; };
+		FBB90627A745C11F56D15825D12CED5F /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA9D4C6957475E1C1A18E2B92FAB753 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ABDBBAFCA9C1B5EB365AE0C0F92600C5 /* PBXContainerItemProxy */ = {
+		1DD1D06C7FFBEE30F404E70783D6DD85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 33F126F9B35BBBD2840C22C0BBAD4A04;
+			remoteGlobalIDString = 458AE0ECF63067F01DE7112D28E9CD1E;
+			remoteInfo = PureLayout;
+		};
+		8D684AB259AF335F2D6E628D6C3C6652 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65250FB7D2B22F10C919D46C1C1D4F4;
+			remoteInfo = AngleGradientLayer;
+		};
+		9D3B006F944FE703CF8AA8E7F2DA94DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA567E722909DC3198DE3CC4D09E5BEB;
 			remoteInfo = BtownToolkit;
+		};
+		D38E1EC7C01CB688327487B328D8D36B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 458AE0ECF63067F01DE7112D28E9CD1E;
+			remoteInfo = PureLayout;
+		};
+		FCC253172C282CA6500CE1AC3D5BC9EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65250FB7D2B22F10C919D46C1C1D4F4;
+			remoteInfo = AngleGradientLayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		061C6380C1382D434ED4AB93B53495E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025706C76F1843F4F5A50F81CC4FE2F1 /* DefaultLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLoadingView.swift; sourceTree = "<group>"; };
+		04B572C16B16007016BA369C7E96BA7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		06F41E595E0334484477FCDC85BAC343 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		14FA32FD3407620BC4362D88A442BB28 /* AlertViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewPresenter.swift; sourceTree = "<group>"; };
+		16C4CA7825AAECB1C8D11C1B1687B17E /* BtownToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BtownToolkit-dummy.m"; sourceTree = "<group>"; };
+		19C2DE8765FC5F6D0301600A7149922E /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		1A747600291EE6424A6776835F2B906B /* Pods-BtownToolkit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BtownToolkit_Example-dummy.m"; sourceTree = "<group>"; };
+		1C34B4843A5578F2134048A0378B4FC3 /* BtownToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BtownToolkit.framework; path = BtownToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DA89145DDBD66E63BCCCF5E3452B848 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		1E7FB407A1DAFB07D2F06B4B0997E465 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC1B01BED09E9C716531FB3001837F2 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		24799E4A5A917398AB789E158786892A /* Pods-BtownToolkit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BtownToolkit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		28A19C2E73019477240396E5C5099947 /* Pods-BtownToolkit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2B82565FE234A198B1878338D9A40D8D /* Pods-BtownToolkit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BtownToolkit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BtownToolkit.xcconfig; sourceTree = "<group>"; };
+		2EC056EF765A6F8C49292A37CB568B01 /* ImageCropSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageCropSelectionView.swift; sourceTree = "<group>"; };
+		35A2B227EA2261F2DAEE411A682A5629 /* AngleGradientLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AngleGradientLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F7612F946A56408B53BD106C0CFE15 /* Pods-BtownToolkit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BtownToolkit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3738FAF98F5757EF068C07B92CB79F37 /* BtownToolkit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BtownToolkit-dummy.m"; sourceTree = "<group>"; };
 		39F7D55F9703AD395F5B94067C6C2E9B /* Pods-BtownToolkit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BtownToolkit_Example-umbrella.h"; sourceTree = "<group>"; };
+		3BA9D4C6957475E1C1A18E2B92FAB753 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		3BD07C37CDEF36F803E2373E76E7DF01 /* Pods-BtownToolkit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BtownToolkit_Tests-dummy.m"; sourceTree = "<group>"; };
 		3F0858E741C5ADD5D58F8AECCB92B460 /* Pods-BtownToolkit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BtownToolkit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		488CAD05E2058ED40BA6136BE3A2A0D2 /* BtownToolkit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BtownToolkit.xcconfig; sourceTree = "<group>"; };
-		49B1E0C5D74DFACC4BE5D299F9B0D311 /* BtownToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BtownToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50FC0622BDF00281F98CD12578694BEF /* Pods-BtownToolkit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BtownToolkit_Tests.modulemap"; sourceTree = "<group>"; };
+		42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4698F52E9B685434B253E43917189E20 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC732788F5368B49439DD88F0B045B2 /* AngleGradientLayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AngleGradientLayer.xcconfig; sourceTree = "<group>"; };
+		50FC0622BDF00281F98CD12578694BEF /* Pods-BtownToolkit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BtownToolkit_Tests.modulemap"; sourceTree = "<group>"; };
 		518081346E9470EBC4D8F915361F8367 /* Pods-BtownToolkit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		550CF117A95ED2D7A100BF6D567CE9DF /* Pods-BtownToolkit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Tests-resources.sh"; sourceTree = "<group>"; };
+		58010F4C172B87551AFA80E80B4E51A8 /* BtownToolkit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-umbrella.h"; sourceTree = "<group>"; };
+		59B7AE712D0771A081DE81E45C1EC117 /* AngleGradientLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AngleGradientLayer-umbrella.h"; sourceTree = "<group>"; };
 		59E9D7973F0DEC2EDB9EF7024924A821 /* Pods-BtownToolkit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5ECB93AD1DBC7DBFF35D99E762C74BE7 /* Pods-BtownToolkit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BtownToolkit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		64FBB8A5EA5FE5FE2A3129EFC597E79A /* Pods-BtownToolkit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		68235904CC798112571CC1A6735C2BDD /* Pods_BtownToolkit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BtownToolkit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		706196706FD92E30946F049868D344EA /* Pods-BtownToolkit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BtownToolkit_Example.modulemap"; sourceTree = "<group>"; };
+		6C6487F03C922CB5B49ECA762A51E1AA /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		6C64C1168209526D528C14B7A87E8E8B /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		706196706FD92E30946F049868D344EA /* Pods-BtownToolkit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BtownToolkit_Example.modulemap"; sourceTree = "<group>"; };
 		7345E553E4C574132B98FD2043AE84BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		745BD5DA5E66E67135A9FF0CAAA91A53 /* Pods-BtownToolkit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Example-resources.sh"; sourceTree = "<group>"; };
 		75A1AD2F1171201F805D9194091E7701 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC80EB98D476A1DC11D6E5C5A1F7E4B6 /* BtownToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-prefix.pch"; sourceTree = "<group>"; };
-		B2AE43D92BE109BBC4CD24A8A2783669 /* BtownToolkit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-umbrella.h"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CF66451A938BECD431308E5F6977EF29 /* Pods_BtownToolkit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BtownToolkit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E73D767A91C2C220901F5CFE55A720 /* AngleGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AngleGradientLayer.h; path = AngleGradient/AngleGradientLayer.h; sourceTree = "<group>"; };
+		7B16DF0CEE59232E0B819B1C8F3CE608 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE63AE16C9A4F9523F4A9C9C341D928 /* BtownToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BtownToolkit.modulemap; sourceTree = "<group>"; };
+		7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		819C6CB96558649158DEE931BCAF68E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F23EE0D53BABDCE70B6E065B7D9B28 /* AngleGradientLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AngleGradientLayer-prefix.pch"; sourceTree = "<group>"; };
+		91E0AE099B15F41EB4D4E983425AAE7B /* AlertViewTextFieldInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewTextFieldInfo.swift; sourceTree = "<group>"; };
+		92526A4DD202029C005A21DE798B3296 /* Pods_BtownToolkit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BtownToolkit_Tests.framework; path = "Pods-BtownToolkit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E440BC6FFA7DCCD6C1965ADDDCD9609 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A22F28AB36C9ECE62FEE6AF69245D1C8 /* AngleGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AngleGradientLayer.m; path = AngleGradient/AngleGradientLayer.m; sourceTree = "<group>"; };
+		A243666983C5D5F0F92817F4014D59D9 /* ActionSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
+		A6746AD1412A7291CBAC028FC982016A /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		AA3CFBE824694323A4C3A0E1C3D718F2 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE80CBE726986CB8052C25BDF0457AAC /* ScrollableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScrollableImageView.swift; sourceTree = "<group>"; };
+		B26CC74C62FE28F3193BE17B4E189E72 /* ViewPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
+		B4A9A8D534FFA9C449F7582802C646F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		C24DD7CC9D7BFE4FA9849A759E802DDA /* ActionSheetAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionSheetAction.swift; sourceTree = "<group>"; };
+		CBCDCB2A98EAC384E8A7F7C6D6CA9ACA /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		CDC7C2FC57391B802C165DCA6FDC0CCA /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		CE3BDDBE119591D40354877BCF8C6C63 /* Pods_BtownToolkit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BtownToolkit_Example.framework; path = "Pods-BtownToolkit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1B3557D973E57C9A07E09F85059FDF /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
 		CFAA39F9331EF6AB6C924ED526AF889B /* Pods-BtownToolkit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BtownToolkit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		E72C25E2B1225772BE25F793B2EDE0CA /* BtownToolkit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BtownToolkit.modulemap; sourceTree = "<group>"; };
+		D1B8D6CA4AB0D4CB6F8DA171875F77F9 /* BtownToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BtownToolkit-prefix.pch"; sourceTree = "<group>"; };
+		D1F3E12A9AFF22287263F4DCD66DE94A /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		D6EDAAC938D52E2324F099A98A895841 /* AlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		D76998A4489A6A64681C15A910C56A14 /* AngleGradientLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AngleGradientLayer.framework; path = AngleGradientLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22B65FEED16B9EF5F3428ADDE631AD0 /* AlertViewAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlertViewAction.swift; sourceTree = "<group>"; };
+		E46F16876840C0FF2DFE6E95761C18F9 /* AngleGradientLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AngleGradientLayer.modulemap; sourceTree = "<group>"; };
+		EA3598824C972603D0CB119DE5BCFC72 /* LoadingViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewViewController.swift; sourceTree = "<group>"; };
 		EF3B3EF171100854FD78ECF03E28DF21 /* Pods-BtownToolkit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BtownToolkit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollableImageView.swift; path = Views/ImageView/ScrollableImageView.swift; sourceTree = "<group>"; };
-		FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCropSelectionView.swift; path = Views/ImageView/ImageCropSelectionView.swift; sourceTree = "<group>"; };
-		FC8998821F3B6EBA0040FFDD /* ActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionSheet.swift; path = Views/ActionSheet/ActionSheet.swift; sourceTree = "<group>"; };
-		FC8998851F3B6F820040FFDD /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewPresenter.swift; path = Views/Presenter/ViewPresenter.swift; sourceTree = "<group>"; };
-		FCB4BEAA1D8EF2F1003D6095 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = Views/AlertView/AlertView.swift; sourceTree = "<group>"; };
-		FCB4BEAB1D8EF2F1003D6095 /* AlertViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewAction.swift; path = Views/AlertView/AlertViewAction.swift; sourceTree = "<group>"; };
-		FCB4BEAC1D8EF2F1003D6095 /* AlertViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewPresenter.swift; path = Views/AlertView/AlertViewPresenter.swift; sourceTree = "<group>"; };
-		FCB4BEAD1D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertViewTextFieldInfo.swift; path = Views/AlertView/AlertViewTextFieldInfo.swift; sourceTree = "<group>"; };
-		FCD9C33A1F3B7139002A27A1 /* ActionSheetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionSheetAction.swift; path = Views/ActionSheet/ActionSheetAction.swift; sourceTree = "<group>"; };
+		F262B6372440CE13BDA7C56050415AD8 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		F34761E40ED593C1377CC80411D2D703 /* AngleGradientLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AngleGradientLayer-dummy.m"; sourceTree = "<group>"; };
+		FBB1C7521B3389EA644A7B79D7C11FBA /* LoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9D9E8FBE62716A674FDA24B75DECD3F5 /* Frameworks */ = {
+		691D46FC44F1DA0F66534542AE280B75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F70083E4C2597728E82EDBC1D6977038 /* Foundation.framework in Frameworks */,
+				A0182224A908D8AEAA161E4209250940 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2363A15308660DEB5CFA17DEB77ECF2 /* Frameworks */ = {
+		997FB145F6128D3BC1E38CD5F9256865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1EA09FA4A4497B6F3AF3BE010FD178 /* Foundation.framework in Frameworks */,
+				D98E15DCD33A35B4909FB44FA765DAB4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C85EE368624769032C18C0CA59281D9F /* Frameworks */ = {
+		B13835CCC27004E579C5EED3239B9063 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				295DE23742FF621724A73D1EF56C1E19 /* Foundation.framework in Frameworks */,
+				7712887C9CEBD32398044F44F51FA438 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE46C9763F517AAF39ACABEE12D3F975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C58668CCB22C4E1F1C9CE19E6562E69 /* AngleGradientLayer.framework in Frameworks */,
+				07745A4D5C4F1C6FD9B9C14A34D266E5 /* Foundation.framework in Frameworks */,
+				34EB0F46B57CB0972CE4088DADDF18BC /* PureLayout.framework in Frameworks */,
+				6AB36A20BCA02166E7524CA43426EC3D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBD07A2B41D86F53A95025A62FFF3B3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5A82E564EB668251EC101B2B280809 /* CoreGraphics.framework in Frameworks */,
+				AA8844EE9E94DFB4515B73B6808408D2 /* Foundation.framework in Frameworks */,
+				84EC9A02C35764F5E7DBE1BB9E1BFD14 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DA3D44EDED61405023404AE4388DE32 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				2EC056EF765A6F8C49292A37CB568B01 /* ImageCropSelectionView.swift */,
+				AE80CBE726986CB8052C25BDF0457AAC /* ScrollableImageView.swift */,
+			);
+			name = ImageView;
+			path = BtownToolkit/Classes/Views/ImageView;
+			sourceTree = "<group>";
+		};
 		104C7231A9310B6E5A5D572A9C0097C1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,12 +234,63 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		14245A7DCB697760CB07495F15F2ECE3 /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				D6EDAAC938D52E2324F099A98A895841 /* AlertView.swift */,
+				E22B65FEED16B9EF5F3428ADDE631AD0 /* AlertViewAction.swift */,
+				14FA32FD3407620BC4362D88A442BB28 /* AlertViewPresenter.swift */,
+				91E0AE099B15F41EB4D4E983425AAE7B /* AlertViewTextFieldInfo.swift */,
 			);
-			name = iOS;
+			name = AlertView;
+			path = BtownToolkit/Classes/Views/AlertView;
+			sourceTree = "<group>";
+		};
+		1551C4811A5DC22765CDFF4D6778A6B5 /* AngleGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				76E73D767A91C2C220901F5CFE55A720 /* AngleGradientLayer.h */,
+				A22F28AB36C9ECE62FEE6AF69245D1C8 /* AngleGradientLayer.m */,
+				9590BCB74685709FC37ED93B7B6650FE /* Support Files */,
+			);
+			name = AngleGradientLayer;
+			path = AngleGradientLayer;
+			sourceTree = "<group>";
+		};
+		3A1832C7677DDDF1310E6886EE95CDD0 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				A243666983C5D5F0F92817F4014D59D9 /* ActionSheet.swift */,
+				C24DD7CC9D7BFE4FA9849A759E802DDA /* ActionSheetAction.swift */,
+			);
+			name = ActionSheet;
+			path = BtownToolkit/Classes/Views/ActionSheet;
+			sourceTree = "<group>";
+		};
+		3D8CFEA7754FF673D6824EEE0B6F4BE2 /* BtownToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				3A1832C7677DDDF1310E6886EE95CDD0 /* ActionSheet */,
+				14245A7DCB697760CB07495F15F2ECE3 /* AlertView */,
+				0DA3D44EDED61405023404AE4388DE32 /* ImageView */,
+				70DFF077C7E6CC611C26844F898D4C7C /* LoadingView */,
+				F783C60BDE7D40BE7176582178E10242 /* Presenter */,
+				A0B87E4DD914D50DC84B1BE87253D527 /* Support Files */,
+			);
+			name = BtownToolkit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3F0EB34CE7C0BEBFEB87D8829B377704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D76998A4489A6A64681C15A910C56A14 /* AngleGradientLayer.framework */,
+				1C34B4843A5578F2134048A0378B4FC3 /* BtownToolkit.framework */,
+				CE3BDDBE119591D40354877BCF8C6C63 /* Pods_BtownToolkit_Example.framework */,
+				92526A4DD202029C005A21DE798B3296 /* Pods_BtownToolkit_Tests.framework */,
+				4698F52E9B685434B253E43917189E20 /* PureLayout.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5A11310A75C4FCFC5F4ACA75D5809DBB /* Pods-BtownToolkit_Example */ = {
@@ -143,31 +311,81 @@
 			path = "Target Support Files/Pods-BtownToolkit_Example";
 			sourceTree = "<group>";
 		};
-		63C9BA3F92EFB804EA72FE26B13AF31F /* Development Pods */ = {
+		70DFF077C7E6CC611C26844F898D4C7C /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
-				BC7443140D8E26E7E3251A605D42DCF3 /* BtownToolkit */,
+				025706C76F1843F4F5A50F81CC4FE2F1 /* DefaultLoadingView.swift */,
+				FBB1C7521B3389EA644A7B79D7C11FBA /* LoadingViewController.swift */,
+				EA3598824C972603D0CB119DE5BCFC72 /* LoadingViewViewController.swift */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		7C00D4AB75B0AA715D258331D4273957 /* BtownToolkit */ = {
-			isa = PBXGroup;
-			children = (
-				EC25453B1D2227E7DC9031B3CDCE00EB /* Classes */,
-			);
-			path = BtownToolkit;
+			name = LoadingView;
+			path = BtownToolkit/Classes/Views/LoadingView;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				63C9BA3F92EFB804EA72FE26B13AF31F /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F49E291F7349EEEB0A737AA1137983E8 /* Products */,
+				9D5B2E33ACDED06C06A5DDB08E157470 /* Development Pods */,
+				BDAC920864D4C2422AB4E05E4F9AA57B /* Frameworks */,
+				C115C2C5136668E09B0FACAD125D7DC9 /* Pods */,
+				3F0EB34CE7C0BEBFEB87D8829B377704 /* Products */,
 				104C7231A9310B6E5A5D572A9C0097C1 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		83B18ACBEE154C5810F7766B36D06073 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D1F3E12A9AFF22287263F4DCD66DE94A /* ALView+PureLayout.h */,
+				19C2DE8765FC5F6D0301600A7149922E /* ALView+PureLayout.m */,
+				6C64C1168209526D528C14B7A87E8E8B /* NSArray+PureLayout.h */,
+				CDC7C2FC57391B802C165DCA6FDC0CCA /* NSArray+PureLayout.m */,
+				A6746AD1412A7291CBAC028FC982016A /* NSLayoutConstraint+PureLayout.h */,
+				1EC1B01BED09E9C716531FB3001837F2 /* NSLayoutConstraint+PureLayout.m */,
+				CBCDCB2A98EAC384E8A7F7C6D6CA9ACA /* PureLayout.h */,
+				3BA9D4C6957475E1C1A18E2B92FAB753 /* PureLayout+Internal.h */,
+				CF1B3557D973E57C9A07E09F85059FDF /* PureLayoutDefines.h */,
+				C2FBD4264FE6831ED21673646E45CE44 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		9590BCB74685709FC37ED93B7B6650FE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E46F16876840C0FF2DFE6E95761C18F9 /* AngleGradientLayer.modulemap */,
+				4CC732788F5368B49439DD88F0B045B2 /* AngleGradientLayer.xcconfig */,
+				F34761E40ED593C1377CC80411D2D703 /* AngleGradientLayer-dummy.m */,
+				85F23EE0D53BABDCE70B6E065B7D9B28 /* AngleGradientLayer-prefix.pch */,
+				59B7AE712D0771A081DE81E45C1EC117 /* AngleGradientLayer-umbrella.h */,
+				7B16DF0CEE59232E0B819B1C8F3CE608 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AngleGradientLayer";
+			sourceTree = "<group>";
+		};
+		9D5B2E33ACDED06C06A5DDB08E157470 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D8CFEA7754FF673D6824EEE0B6F4BE2 /* BtownToolkit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A0B87E4DD914D50DC84B1BE87253D527 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BE63AE16C9A4F9523F4A9C9C341D928 /* BtownToolkit.modulemap */,
+				2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */,
+				16C4CA7825AAECB1C8D11C1B1687B17E /* BtownToolkit-dummy.m */,
+				D1B8D6CA4AB0D4CB6F8DA171875F77F9 /* BtownToolkit-prefix.pch */,
+				58010F4C172B87551AFA80E80B4E51A8 /* BtownToolkit-umbrella.h */,
+				1E7FB407A1DAFB07D2F06B4B0997E465 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BtownToolkit";
 			sourceTree = "<group>";
 		};
 		B7F9A43D88F4434EAC250EC50C83FA28 /* Pods-BtownToolkit_Tests */ = {
@@ -188,158 +406,175 @@
 			path = "Target Support Files/Pods-BtownToolkit_Tests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		BDAC920864D4C2422AB4E05E4F9AA57B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				35A2B227EA2261F2DAEE411A682A5629 /* AngleGradientLayer.framework */,
+				AA3CFBE824694323A4C3A0E1C3D718F2 /* PureLayout.framework */,
+				FEA223F382C083B107F21F8A568405BD /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BC7443140D8E26E7E3251A605D42DCF3 /* BtownToolkit */ = {
+		C115C2C5136668E09B0FACAD125D7DC9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C00D4AB75B0AA715D258331D4273957 /* BtownToolkit */,
-				CBF7D3E459D3E5D744F64F560C273DC8 /* Support Files */,
+				1551C4811A5DC22765CDFF4D6778A6B5 /* AngleGradientLayer */,
+				83B18ACBEE154C5810F7766B36D06073 /* PureLayout */,
 			);
-			name = BtownToolkit;
-			path = ../..;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		CBF7D3E459D3E5D744F64F560C273DC8 /* Support Files */ = {
+		C2FBD4264FE6831ED21673646E45CE44 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E72C25E2B1225772BE25F793B2EDE0CA /* BtownToolkit.modulemap */,
-				488CAD05E2058ED40BA6136BE3A2A0D2 /* BtownToolkit.xcconfig */,
-				3738FAF98F5757EF068C07B92CB79F37 /* BtownToolkit-dummy.m */,
-				AC80EB98D476A1DC11D6E5C5A1F7E4B6 /* BtownToolkit-prefix.pch */,
-				B2AE43D92BE109BBC4CD24A8A2783669 /* BtownToolkit-umbrella.h */,
-				061C6380C1382D434ED4AB93B53495E3 /* Info.plist */,
+				819C6CB96558649158DEE931BCAF68E2 /* Info.plist */,
+				06F41E595E0334484477FCDC85BAC343 /* PureLayout.modulemap */,
+				7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */,
+				6C6487F03C922CB5B49ECA762A51E1AA /* PureLayout-dummy.m */,
+				F262B6372440CE13BDA7C56050415AD8 /* PureLayout-prefix.pch */,
+				1DA89145DDBD66E63BCCCF5E3452B848 /* PureLayout-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BtownToolkit";
+			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
-		EC25453B1D2227E7DC9031B3CDCE00EB /* Classes */ = {
+		F783C60BDE7D40BE7176582178E10242 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				FCB4BEA81D8EF2A5003D6095 /* Views */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		F49E291F7349EEEB0A737AA1137983E8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				49B1E0C5D74DFACC4BE5D299F9B0D311 /* BtownToolkit.framework */,
-				CF66451A938BECD431308E5F6977EF29 /* Pods_BtownToolkit_Example.framework */,
-				68235904CC798112571CC1A6735C2BDD /* Pods_BtownToolkit_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FC4B4D171DACEC6300A76A5B /* ImageView */ = {
-			isa = PBXGroup;
-			children = (
-				FC4B4D181DACEC9000A76A5B /* ScrollableImageView.swift */,
-				FC4B4D1D1DAD2C1B00A76A5B /* ImageCropSelectionView.swift */,
-			);
-			name = ImageView;
-			sourceTree = "<group>";
-		};
-		FC8998811F3B6E1F0040FFDD /* ActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				FC8998821F3B6EBA0040FFDD /* ActionSheet.swift */,
-				FCD9C33A1F3B7139002A27A1 /* ActionSheetAction.swift */,
-			);
-			name = ActionSheet;
-			sourceTree = "<group>";
-		};
-		FC8998841F3B6F5D0040FFDD /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				FC8998851F3B6F820040FFDD /* ViewPresenter.swift */,
+				B26CC74C62FE28F3193BE17B4E189E72 /* ViewPresenter.swift */,
 			);
 			name = Presenter;
+			path = BtownToolkit/Classes/Views/Presenter;
 			sourceTree = "<group>";
 		};
-		FCB4BEA81D8EF2A5003D6095 /* Views */ = {
+		FEA223F382C083B107F21F8A568405BD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FC8998841F3B6F5D0040FFDD /* Presenter */,
-				FC4B4D171DACEC6300A76A5B /* ImageView */,
-				FCB4BEA91D8EF2AE003D6095 /* AlertView */,
-				FC8998811F3B6E1F0040FFDD /* ActionSheet */,
+				B4A9A8D534FFA9C449F7582802C646F7 /* CoreGraphics.framework */,
+				42F4EE44A0AC51D4EB54E18D74F7ECD9 /* Foundation.framework */,
+				9E440BC6FFA7DCCD6C1965ADDDCD9609 /* QuartzCore.framework */,
+				04B572C16B16007016BA369C7E96BA7F /* UIKit.framework */,
 			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		FCB4BEA91D8EF2AE003D6095 /* AlertView */ = {
-			isa = PBXGroup;
-			children = (
-				FCB4BEAA1D8EF2F1003D6095 /* AlertView.swift */,
-				FCB4BEAB1D8EF2F1003D6095 /* AlertViewAction.swift */,
-				FCB4BEAC1D8EF2F1003D6095 /* AlertViewPresenter.swift */,
-				FCB4BEAD1D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift */,
-			);
-			name = AlertView;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		27D366081B290F0D00AAF202E960CE93 /* Headers */ = {
+		4C1C43E3AC46D86BCB331F377A8C6AD4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831B7FEA92260F55AFAFF73483F250DC /* BtownToolkit-umbrella.h in Headers */,
+				D8EFF0A9497C6AF586041156EFBE6376 /* BtownToolkit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63D445156BE07E6E9DC9BAA31D4210FA /* Headers */ = {
+		84C750A74BC72EE7C58C15DA04D89D2E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A10A786680294E7314BAB2D5BBAF210 /* Pods-BtownToolkit_Example-umbrella.h in Headers */,
+				4CBEB7C1CA88EDE771E559863CE8615C /* Pods-BtownToolkit_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B370F7FE3898E28A8DEE3B4F8833B832 /* Headers */ = {
+		8723837D215B1815CD4207F93C78B50A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F9051E76F33EE083EB8BE84049297A /* Pods-BtownToolkit_Tests-umbrella.h in Headers */,
+				AE3C7A2D278BFCD704E06BE5502CF5FC /* AngleGradientLayer-umbrella.h in Headers */,
+				3886D0B90E6591162417B5A1FB17E7F8 /* AngleGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B3EC86E86F5AF311E2506F85ECC777 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				920E13E82426564F262132896AADB94D /* Pods-BtownToolkit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DE80C7F60B19841CDDF9BB40433F2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5A1452242C3CE1A4EB57FC8D06EDD2 /* ALView+PureLayout.h in Headers */,
+				6DD8C4ED62D1AF8671EF6CDD23704726 /* NSArray+PureLayout.h in Headers */,
+				25E0CDABDA5B1097605FCAFD2554EFEA /* NSLayoutConstraint+PureLayout.h in Headers */,
+				FBB90627A745C11F56D15825D12CED5F /* PureLayout+Internal.h in Headers */,
+				92F893CC184E2CF75F6F4AEAF51734DB /* PureLayout-umbrella.h in Headers */,
+				81D31C984654A2ED1E35E1675D004DA3 /* PureLayout.h in Headers */,
+				3E6AA7B9AE7C94E1920D45C814BAE81F /* PureLayoutDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		33F126F9B35BBBD2840C22C0BBAD4A04 /* BtownToolkit */ = {
+		0718FBB7792DA4D10274CEC6D0385E10 /* Pods-BtownToolkit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BED4C95183D61B2953E241AF9FF9A754 /* Build configuration list for PBXNativeTarget "BtownToolkit" */;
+			buildConfigurationList = BFD0D3EAE3F5D8C06E05770780E75470 /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Example" */;
 			buildPhases = (
-				4899BC2A150AD9F354E3B94ED120C2D4 /* Sources */,
-				C85EE368624769032C18C0CA59281D9F /* Frameworks */,
-				27D366081B290F0D00AAF202E960CE93 /* Headers */,
+				201B4D698EA833B6EED6A6E181ADFFD6 /* Sources */,
+				B13835CCC27004E579C5EED3239B9063 /* Frameworks */,
+				D0B3EC86E86F5AF311E2506F85ECC777 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20F2D5B176521D676DDFE78CC2E3B9F2 /* PBXTargetDependency */,
+				96D86E97A371DADB9D220C7B31FB936B /* PBXTargetDependency */,
+				C1C13E5AE2CC5DA8874B80FE886E9F55 /* PBXTargetDependency */,
+			);
+			name = "Pods-BtownToolkit_Example";
+			productName = "Pods-BtownToolkit_Example";
+			productReference = CE3BDDBE119591D40354877BCF8C6C63 /* Pods_BtownToolkit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE8F1783EAF70EDC98C314ABBF33855 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				5878008814A69FDFBB0E58A7BACB9E44 /* Sources */,
+				997FB145F6128D3BC1E38CD5F9256865 /* Frameworks */,
+				F7DE80C7F60B19841CDDF9BB40433F2D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BtownToolkit;
-			productName = BtownToolkit;
-			productReference = 49B1E0C5D74DFACC4BE5D299F9B0D311 /* BtownToolkit.framework */;
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 4698F52E9B685434B253E43917189E20 /* PureLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5FFACA6BBB6EF89CEFA654917E20EDE1 /* Pods-BtownToolkit_Tests */ = {
+		AA567E722909DC3198DE3CC4D09E5BEB /* BtownToolkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56E86AB61B7DD147D715E96F17C8F7ED /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Tests" */;
+			buildConfigurationList = EAF9A0A44D71ED5732EA06832E48106B /* Build configuration list for PBXNativeTarget "BtownToolkit" */;
 			buildPhases = (
-				645C0D4B9117D76D4430AE6CF863A738 /* Sources */,
-				9D9E8FBE62716A674FDA24B75DECD3F5 /* Frameworks */,
-				B370F7FE3898E28A8DEE3B4F8833B832 /* Headers */,
+				E358AB666507B2F92D60B3FF740E85C4 /* Sources */,
+				BE46C9763F517AAF39ACABEE12D3F975 /* Frameworks */,
+				4C1C43E3AC46D86BCB331F377A8C6AD4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E48F50B017B00B3B46DD54D9163A33 /* PBXTargetDependency */,
+				16AE903AA13434DDBE8CEB5159895861 /* PBXTargetDependency */,
+			);
+			name = BtownToolkit;
+			productName = BtownToolkit;
+			productReference = 1C34B4843A5578F2134048A0378B4FC3 /* BtownToolkit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C82872F0533CCD3E80FB84D95B9CAE4D /* Pods-BtownToolkit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C4CEA336AA5C78BAF159ADD00A0E6C /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Tests" */;
+			buildPhases = (
+				F2432E9F27C9C93B6DA776A7CD4D398B /* Sources */,
+				691D46FC44F1DA0F66534542AE280B75 /* Frameworks */,
+				84C750A74BC72EE7C58C15DA04D89D2E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -347,25 +582,24 @@
 			);
 			name = "Pods-BtownToolkit_Tests";
 			productName = "Pods-BtownToolkit_Tests";
-			productReference = 68235904CC798112571CC1A6735C2BDD /* Pods_BtownToolkit_Tests.framework */;
+			productReference = 92526A4DD202029C005A21DE798B3296 /* Pods_BtownToolkit_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C2A62DCFB1B3C21979C53957C9B91C91 /* Pods-BtownToolkit_Example */ = {
+		D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76FB097B3ABCB7997104142F0AB45228 /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Example" */;
+			buildConfigurationList = 808C22DBA6FBBD4CABC7211CFB6B7E05 /* Build configuration list for PBXNativeTarget "AngleGradientLayer" */;
 			buildPhases = (
-				79A6B182A48E591D42A31FABFDEF2209 /* Sources */,
-				A2363A15308660DEB5CFA17DEB77ECF2 /* Frameworks */,
-				63D445156BE07E6E9DC9BAA31D4210FA /* Headers */,
+				8FD5A969DBD8C9F4B9C1B85789818D0A /* Sources */,
+				CBD07A2B41D86F53A95025A62FFF3B3A /* Frameworks */,
+				8723837D215B1815CD4207F93C78B50A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8099A2F235081C72F1D9891F6D6384C1 /* PBXTargetDependency */,
 			);
-			name = "Pods-BtownToolkit_Example";
-			productName = "Pods-BtownToolkit_Example";
-			productReference = CF66451A938BECD431308E5F6977EF29 /* Pods_BtownToolkit_Example.framework */;
+			name = AngleGradientLayer;
+			productName = AngleGradientLayer;
+			productReference = D76998A4489A6A64681C15A910C56A14 /* AngleGradientLayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -374,7 +608,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -385,106 +619,120 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F49E291F7349EEEB0A737AA1137983E8 /* Products */;
+			productRefGroup = 3F0EB34CE7C0BEBFEB87D8829B377704 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				33F126F9B35BBBD2840C22C0BBAD4A04 /* BtownToolkit */,
-				C2A62DCFB1B3C21979C53957C9B91C91 /* Pods-BtownToolkit_Example */,
-				5FFACA6BBB6EF89CEFA654917E20EDE1 /* Pods-BtownToolkit_Tests */,
+				D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */,
+				AA567E722909DC3198DE3CC4D09E5BEB /* BtownToolkit */,
+				0718FBB7792DA4D10274CEC6D0385E10 /* Pods-BtownToolkit_Example */,
+				C82872F0533CCD3E80FB84D95B9CAE4D /* Pods-BtownToolkit_Tests */,
+				458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4899BC2A150AD9F354E3B94ED120C2D4 /* Sources */ = {
+		201B4D698EA833B6EED6A6E181ADFFD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC8998861F3B6F820040FFDD /* ViewPresenter.swift in Sources */,
-				FCB4BEB01D8EF2F1003D6095 /* AlertViewPresenter.swift in Sources */,
-				FCB4BEB11D8EF2F1003D6095 /* AlertViewTextFieldInfo.swift in Sources */,
-				94FB33B88D577D8177151A3A75A64432 /* BtownToolkit-dummy.m in Sources */,
-				FC8998831F3B6EBA0040FFDD /* ActionSheet.swift in Sources */,
-				FCD9C33B1F3B7139002A27A1 /* ActionSheetAction.swift in Sources */,
-				FC4B4D191DACEC9000A76A5B /* ScrollableImageView.swift in Sources */,
-				FCB4BEAF1D8EF2F1003D6095 /* AlertViewAction.swift in Sources */,
-				FCB4BEAE1D8EF2F1003D6095 /* AlertView.swift in Sources */,
-				FC4B4D1E1DAD2C1B00A76A5B /* ImageCropSelectionView.swift in Sources */,
+				087094B1BAA99452C499DAA2D1B709B6 /* Pods-BtownToolkit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		645C0D4B9117D76D4430AE6CF863A738 /* Sources */ = {
+		5878008814A69FDFBB0E58A7BACB9E44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DF17F3C01A297CC77E572BB47534273 /* Pods-BtownToolkit_Tests-dummy.m in Sources */,
+				603DD8D32716B7C95FEF3710C4DC6E5B /* ALView+PureLayout.m in Sources */,
+				E83B5BD501F92AF5B814201A9D3FF5AD /* NSArray+PureLayout.m in Sources */,
+				BBC6381C7F650F95D6EEA8CCD0606AC5 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				44B88ED78D30E2993B8E775E2545E01E /* PureLayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79A6B182A48E591D42A31FABFDEF2209 /* Sources */ = {
+		8FD5A969DBD8C9F4B9C1B85789818D0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A941CA333226DB8ED3BC0B1D5FA8B676 /* Pods-BtownToolkit_Example-dummy.m in Sources */,
+				8B0D3F53B6D062517F5A22ACF6DD26B7 /* AngleGradientLayer-dummy.m in Sources */,
+				6F6652C1F3DFA1932B2EAB289EB543BF /* AngleGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E358AB666507B2F92D60B3FF740E85C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4330D4B463A37995EF4127E6B27BF0E9 /* ActionSheet.swift in Sources */,
+				5E80AFA4B40F1B494AD8CDD960D584CB /* ActionSheetAction.swift in Sources */,
+				42FA2E86544C2EECFB37B15AAA3297A2 /* AlertView.swift in Sources */,
+				38D48502775D8E692694757536FE4FBD /* AlertViewAction.swift in Sources */,
+				34B01BFFA47F208F32EFDD1FA653E4CC /* AlertViewPresenter.swift in Sources */,
+				BDC29E6116CE4F7DA1BE6084090AC18E /* AlertViewTextFieldInfo.swift in Sources */,
+				22A388AF5B572D0501A6607E71B38070 /* BtownToolkit-dummy.m in Sources */,
+				E5CE9AB5622C927A2E6923879935843E /* DefaultLoadingView.swift in Sources */,
+				5E890334C11BDB0BE032D7CEE6D2B4CE /* ImageCropSelectionView.swift in Sources */,
+				7AE26AD8D16C68A5FB6CB561049F158A /* LoadingViewController.swift in Sources */,
+				1EA73CDEC6AB1070153194AEE58B7A8E /* LoadingViewViewController.swift in Sources */,
+				41AFC398400722F2D001A9E83B0F4114 /* ScrollableImageView.swift in Sources */,
+				8D14F9CC8DB5738C92719F2A5A951AD1 /* ViewPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2432E9F27C9C93B6DA776A7CD4D398B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C07AF7D9925A7398F620F4165001A885 /* Pods-BtownToolkit_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8099A2F235081C72F1D9891F6D6384C1 /* PBXTargetDependency */ = {
+		16AE903AA13434DDBE8CEB5159895861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */;
+			targetProxy = D38E1EC7C01CB688327487B328D8D36B /* PBXContainerItemProxy */;
+		};
+		20F2D5B176521D676DDFE78CC2E3B9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AngleGradientLayer;
+			target = D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */;
+			targetProxy = 8D684AB259AF335F2D6E628D6C3C6652 /* PBXContainerItemProxy */;
+		};
+		78E48F50B017B00B3B46DD54D9163A33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AngleGradientLayer;
+			target = D65250FB7D2B22F10C919D46C1C1D4F4 /* AngleGradientLayer */;
+			targetProxy = FCC253172C282CA6500CE1AC3D5BC9EA /* PBXContainerItemProxy */;
+		};
+		96D86E97A371DADB9D220C7B31FB936B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BtownToolkit;
-			target = 33F126F9B35BBBD2840C22C0BBAD4A04 /* BtownToolkit */;
-			targetProxy = ABDBBAFCA9C1B5EB365AE0C0F92600C5 /* PBXContainerItemProxy */;
+			target = AA567E722909DC3198DE3CC4D09E5BEB /* BtownToolkit */;
+			targetProxy = 9D3B006F944FE703CF8AA8E7F2DA94DB /* PBXContainerItemProxy */;
+		};
+		C1C13E5AE2CC5DA8874B80FE886E9F55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 458AE0ECF63067F01DE7112D28E9CD1E /* PureLayout */;
+			targetProxy = 1DD1D06C7FFBEE30F404E70783D6DD85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+		05EAA9CDF1A4A1CDFD6C33E443DA3EB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		15EA729D41DDCAE12291E44CCF67E732 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 488CAD05E2058ED40BA6136BE3A2A0D2 /* BtownToolkit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -493,17 +741,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BtownToolkit/BtownToolkit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BtownToolkit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BtownToolkit/BtownToolkit.modulemap";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BtownToolkit;
+				PRODUCT_NAME = PureLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -511,11 +759,48 @@
 			};
 			name = Debug;
 		};
-		1F28CA1469819CC7B2904029D2B6E00E /* Debug */ = {
+		1AD5DCA202A098A50E2B503DFB112741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC732788F5368B49439DD88F0B045B2 /* AngleGradientLayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AngleGradientLayer/AngleGradientLayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AngleGradientLayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AngleGradientLayer/AngleGradientLayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AngleGradientLayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A6F035506DA425869CCF4A9A6AAF8A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5ECB93AD1DBC7DBFF35D99E762C74BE7 /* Pods-BtownToolkit_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -526,7 +811,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-BtownToolkit_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BtownToolkit_Tests/Pods-BtownToolkit_Tests.modulemap";
@@ -545,11 +830,14 @@
 			};
 			name = Debug;
 		};
-		7A053DF18E214A07E58EC4F251E1CEFE /* Release */ = {
+		3CF55192610D4B69F64F68D5F49C70FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59E9D7973F0DEC2EDB9EF7024924A821 /* Pods-BtownToolkit_Example.release.xcconfig */;
+			baseConfigurationReference = 7C559C85DA4F3BB9F12984795E822BF8 /* PureLayout.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -558,20 +846,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BtownToolkit_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BtownToolkit_Example/Pods-BtownToolkit_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BtownToolkit_Example;
+				PRODUCT_NAME = PureLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -579,11 +864,14 @@
 			};
 			name = Release;
 		};
-		927EF6BEE6C51D30CC8D8C7A78441061 /* Release */ = {
+		51BA6E6FFEA99CB44E80EE899F20584E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 488CAD05E2058ED40BA6136BE3A2A0D2 /* BtownToolkit.xcconfig */;
+			baseConfigurationReference = 2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -595,13 +883,15 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BtownToolkit/BtownToolkit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BtownToolkit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/BtownToolkit/BtownToolkit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = BtownToolkit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -609,46 +899,12 @@
 			};
 			name = Release;
 		};
-		B92A31C1A2A78924F77AE3681D8ABD90 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28A19C2E73019477240396E5C5099947 /* Pods-BtownToolkit_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BtownToolkit_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BtownToolkit_Example/Pods-BtownToolkit_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_BtownToolkit_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -656,12 +912,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -679,18 +939,144 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		FDF460F71B41E17D24BE125036927D3E /* Release */ = {
+		BBF0C99F537CBA2D6F4A2CD6310B15CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E9D7973F0DEC2EDB9EF7024924A821 /* Pods-BtownToolkit_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BtownToolkit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BtownToolkit_Example/Pods-BtownToolkit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BtownToolkit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2B92A43E48AC4FD89CD0E8ECDACCD55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A19C2E73019477240396E5C5099947 /* Pods-BtownToolkit_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BtownToolkit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BtownToolkit_Example/Pods-BtownToolkit_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BtownToolkit_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2C71467DE2B6B2D845E9D961681AA87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 518081346E9470EBC4D8F915361F8367 /* Pods-BtownToolkit_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -701,7 +1087,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-BtownToolkit_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BtownToolkit_Tests/Pods-BtownToolkit_Tests.modulemap";
@@ -720,41 +1106,128 @@
 			};
 			name = Release;
 		};
+		F56AFEE30499702F074733752E40C0C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CDAE9F951A33934427439E0516B9FCE /* BtownToolkit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BtownToolkit/BtownToolkit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BtownToolkit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BtownToolkit/BtownToolkit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BtownToolkit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F96ACD7E83665F6E802A9C08810EA09B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CC732788F5368B49439DD88F0B045B2 /* AngleGradientLayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AngleGradientLayer/AngleGradientLayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AngleGradientLayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AngleGradientLayer/AngleGradientLayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AngleGradientLayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56E86AB61B7DD147D715E96F17C8F7ED /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Tests" */ = {
+		808C22DBA6FBBD4CABC7211CFB6B7E05 /* Build configuration list for PBXNativeTarget "AngleGradientLayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F28CA1469819CC7B2904029D2B6E00E /* Debug */,
-				FDF460F71B41E17D24BE125036927D3E /* Release */,
+				1AD5DCA202A098A50E2B503DFB112741 /* Debug */,
+				F96ACD7E83665F6E802A9C08810EA09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76FB097B3ABCB7997104142F0AB45228 /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Example" */ = {
+		A4C4CEA336AA5C78BAF159ADD00A0E6C /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B92A31C1A2A78924F77AE3681D8ABD90 /* Debug */,
-				7A053DF18E214A07E58EC4F251E1CEFE /* Release */,
+				3A6F035506DA425869CCF4A9A6AAF8A3 /* Debug */,
+				E2C71467DE2B6B2D845E9D961681AA87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BED4C95183D61B2953E241AF9FF9A754 /* Build configuration list for PBXNativeTarget "BtownToolkit" */ = {
+		BFD0D3EAE3F5D8C06E05770780E75470 /* Build configuration list for PBXNativeTarget "Pods-BtownToolkit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				15EA729D41DDCAE12291E44CCF67E732 /* Debug */,
-				927EF6BEE6C51D30CC8D8C7A78441061 /* Release */,
+				C2B92A43E48AC4FD89CD0E8ECDACCD55 /* Debug */,
+				BBF0C99F537CBA2D6F4A2CD6310B15CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAF9A0A44D71ED5732EA06832E48106B /* Build configuration list for PBXNativeTarget "BtownToolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56AFEE30499702F074733752E40C0C9 /* Debug */,
+				51BA6E6FFEA99CB44E80EE899F20584E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE8F1783EAF70EDC98C314ABBF33855 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EAA9CDF1A4A1CDFD6C33E443DA3EB1 /* Debug */,
+				3CF55192610D4B69F64F68D5F49C70FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

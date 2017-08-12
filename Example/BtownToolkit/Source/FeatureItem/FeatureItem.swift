@@ -13,6 +13,7 @@ enum FeatureItem {
     case ActionSheet
     case ScrollableImageView
     case ImageCropSelectionView
+    case LoadingView
 }
 
 extension FeatureItem {
@@ -26,6 +27,8 @@ extension FeatureItem {
             return "ScrollableImageView"
         case .ImageCropSelectionView:
             return "ImageCropSelectionView"
+        case .LoadingView:
+            return "LoadingView"
         }
     }
     var shortInfoText: String {
@@ -38,6 +41,8 @@ extension FeatureItem {
             return "Zoomable and scrollable ImageView."
         case .ImageCropSelectionView:
             return "ScrollableImageView with selection area."
+        case .LoadingView:
+            return "A nice looking loading view"
         }
     }
     
@@ -51,6 +56,8 @@ extension FeatureItem {
             return "ScrollabelImageViewScreen"
         case .ImageCropSelectionView:
             return "ImageCropSelectionViewScreen"
+        case .LoadingView:
+            return "LoadingViewScreen"
         }
     }
     var viewController: UIViewController {

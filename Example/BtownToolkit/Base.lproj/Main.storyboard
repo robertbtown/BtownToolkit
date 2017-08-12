@@ -217,5 +217,54 @@
             </objects>
             <point key="canvasLocation" x="706" y="-197"/>
         </scene>
+        <!--Loading View View Controller-->
+        <scene sceneID="bUh-Ot-foB">
+            <objects>
+                <viewController storyboardIdentifier="LoadingViewScreen" id="wgx-Yd-jb1" customClass="LoadingViewViewController" customModule="BtownToolkit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iA2-GR-scM"/>
+                        <viewControllerLayoutGuide type="bottom" id="egn-Qf-KjC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NKj-0P-k7j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aza-WC-Yl9">
+                                <rect key="frame" x="105" y="280" width="165" height="30"/>
+                                <state key="normal" title="Try LoadingView normal"/>
+                                <connections>
+                                    <action selector="showLoadingViewNormal" destination="wgx-Yd-jb1" eventType="touchUpInside" id="Lzi-VB-be5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nks-HD-il6">
+                                <rect key="frame" x="91" y="318.5" width="194" height="30"/>
+                                <state key="normal" title="Try LoadingView completion"/>
+                                <connections>
+                                    <action selector="showLoadingViewWithCompletion" destination="wgx-Yd-jb1" eventType="touchUpInside" id="HDq-rg-S3n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPV-zc-oRG">
+                                <rect key="frame" x="55" y="356" width="264" height="30"/>
+                                <state key="normal" title="Try LoadingView completion with error"/>
+                                <connections>
+                                    <action selector="showLoadingViewWithCompletionAndError" destination="wgx-Yd-jb1" eventType="touchUpInside" id="YWp-2g-wMz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nks-HD-il6" firstAttribute="centerX" secondItem="NKj-0P-k7j" secondAttribute="centerX" id="5M5-vl-rVB"/>
+                            <constraint firstItem="nks-HD-il6" firstAttribute="centerY" secondItem="NKj-0P-k7j" secondAttribute="centerY" id="MLJ-J9-Qwm"/>
+                            <constraint firstItem="nks-HD-il6" firstAttribute="top" secondItem="aza-WC-Yl9" secondAttribute="bottom" constant="8.5" id="QAq-sE-22H"/>
+                            <constraint firstItem="aza-WC-Yl9" firstAttribute="centerX" secondItem="NKj-0P-k7j" secondAttribute="centerX" id="cQf-qj-4LM"/>
+                            <constraint firstItem="DPV-zc-oRG" firstAttribute="top" secondItem="nks-HD-il6" secondAttribute="bottom" constant="7.5" id="dkB-7Z-Fry"/>
+                            <constraint firstItem="DPV-zc-oRG" firstAttribute="centerX" secondItem="NKj-0P-k7j" secondAttribute="centerX" id="es6-G7-DHJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytc-6n-CfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="-197"/>
+        </scene>
     </scenes>
 </document>

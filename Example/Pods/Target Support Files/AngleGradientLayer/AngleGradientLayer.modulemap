@@ -1,0 +1,6 @@
+framework module AngleGradientLayer {
+  umbrella header "AngleGradientLayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

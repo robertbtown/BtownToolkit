@@ -18,7 +18,8 @@ struct StartViewModel {
             .AlertView,
             .ActionSheet,
             .ScrollableImageView,
-            .ImageCropSelectionView
+            .ImageCropSelectionView,
+            .LoadingView
         ]
     }
     

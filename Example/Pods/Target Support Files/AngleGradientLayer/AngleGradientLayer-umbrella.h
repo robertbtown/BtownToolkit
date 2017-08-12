@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "AngleGradientLayer.h"
 
-FOUNDATION_EXPORT double Pods_BtownToolkit_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BtownToolkit_TestsVersionString[];
+FOUNDATION_EXPORT double AngleGradientLayerVersionNumber;
+FOUNDATION_EXPORT const unsigned char AngleGradientLayerVersionString[];
 

@@ -16,5 +16,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'BtownToolkit/Classes/**/*'
 
+  s.dependency 'PureLayout', '~> 3.0'
+  s.dependency 'AngleGradientLayer', '~> 1.2'
+
   s.frameworks = 'UIKit'
 end
