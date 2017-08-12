@@ -24,16 +24,16 @@ import UIKit
 ///
 /// For inspiration on how to create a custom LoadingView, the checkout the code in DefaultLoadingView.swift
 public class LoadingViewController {
-    
+
     fileprivate struct Constants {
         static let defaultAutoDismissDelay = 1.5
         static let minPresentationTime = 0.5
     }
-    
+
     fileprivate let loadingText: String?
     fileprivate let completionText: String?
     fileprivate let completionErrorText: String?
-    
+
     /// Use this to update how much of the loading that is currently completed.
     /// It will default to zero on init.
     public var completionPercentage: Float? {
@@ -41,18 +41,18 @@ public class LoadingViewController {
             loadingViewVC?.completionPercentage = completionPercentage
         }
     }
-    
+
     /// If the LoadingView is stopped with a completion (meaning it shows a completion state)
     /// then this is the time it will stay visible after completion. After this time, the LoadingView
     /// will be dismissed.
     public static var completionAutoDismissDelay: TimeInterval = Constants.defaultAutoDismissDelay
-    
+
     fileprivate let loadingViewType: LoadingViewProtocol.Type
     fileprivate weak var loadingViewVC: LoadingViewViewController?
-    
+
     fileprivate(set) var isLoading: Bool
     fileprivate var startLoadingTime: CFTimeInterval?
-    
+
     public init(loadingViewType: LoadingViewProtocol.Type = DefaultLoadingView.self, loadingText: String? = nil, completionText: String? = nil, completionErrorText: String? = nil) {
         self.loadingViewType = loadingViewType
         self.loadingText = loadingText
@@ -66,25 +66,31 @@ public class LoadingViewController {
 // MARK: Public methods
 
 public extension LoadingViewController {
-    
+
     /// Presents the LoadingView and start loading.
     public func startLoading() {
-        presentViewAndStartLoading()
+        DispatchQueue.main.async { [weak self] in
+            self?.presentViewAndStartLoading()
+        }
     }
-    
+
     /// Stops the LoadingView and directly dismisses it.
     public func stopLoading() {
-        stopLoadingAndDismissView(withCompletionState: false, autoDismissDelay: 0, withError: false)
+        DispatchQueue.main.async { [weak self] in
+            self?.stopLoadingAndDismissView(withCompletionState: false, autoDismissDelay: 0, withError: false)
+        }
     }
-    
-    /// Stops the LoadingView and shows a completion state. 
+
+    /// Stops the LoadingView and shows a completion state.
     /// The LoadingView will be dismissed after autoDismissDelay. By default the autoDismissDelay is set to be LoadingViewController.completionAutoDismissDelay
     ///
     /// - Parameters:
     ///   - withError: Indicates if an error occured. If this is true, then an Error state is shown with the completionErrorText
     ///   - autoDismissDelay: the time LoadingView should stay visible after it completes. By default this is set to be LoadingViewController.completionAutoDismissDelay
     public func stopLoadingWithCompletion(withError: Bool = false, autoDismissDelay: TimeInterval = LoadingViewController.completionAutoDismissDelay) {
-        stopLoadingAndDismissView(withCompletionState: true, autoDismissDelay: autoDismissDelay, withError: withError)
+        DispatchQueue.main.async { [weak self] in
+            self?.stopLoadingAndDismissView(withCompletionState: true, autoDismissDelay: autoDismissDelay, withError: withError)
+        }
     }
 }
 
@@ -94,26 +100,26 @@ fileprivate extension LoadingViewController {
     func presentViewAndStartLoading() {
         guard !isLoading else { return }
         isLoading = true
-        
+
         let sharedPresenter = ViewPresenter.sharedPresenter
-        
+
         let loadingViewVC = LoadingViewViewController(loadingViewType: loadingViewType, loadingText: loadingText, completionSuccessText: completionText, completionErrorText: completionErrorText)
         sharedPresenter.present(loadingViewVC, animated: false) { [weak self] in
             self?.startLoadingTime = CACurrentMediaTime()
             loadingViewVC.startLoading()
         }
         self.loadingViewVC = loadingViewVC
-        
+
         /**
          Associate self with loadingViewViewController so that self doesn't get
          deallocated until loadingViewViewController gets deallocated.
          */
         objc_setAssociatedObject(loadingViewVC, "LoadingViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    
+
     func stopLoadingAndDismissView(withCompletionState: Bool, autoDismissDelay: TimeInterval, withError: Bool) {
         guard isLoading else { return }
-        
+
         DispatchQueue.main.asyncAfter(deadline: stopLoadingDispatchTime(), execute: { [weak self] in
             guard let `self` = self else { return }
             if let loadingViewVC = self.loadingViewVC {
@@ -129,16 +135,16 @@ fileprivate extension LoadingViewController {
             }
         })
     }
-    
+
     func stopLoadingDispatchTime() -> DispatchTime {
         let startLoadingTime = self.startLoadingTime ?? CACurrentMediaTime()
         let stopLoadingTime = CACurrentMediaTime()
         let loadingTime = (stopLoadingTime - startLoadingTime)
-        
+
         // If loading time is less than min loading time, then append a diff as delay
         let loadingDelta = Constants.minPresentationTime - loadingTime
         let delay = loadingDelta > 0 ? loadingDelta : 0
-        
+
         return .now() + delay
     }
 }
