@@ -123,9 +123,9 @@ public class AlertView {
 
         textFieldInfoMapper.removeAll()
         for textFieldInfo in textFieldInfos {
-            alertController.addTextField(configurationHandler: { [unowned self] (textField) in
+            alertController.addTextField(configurationHandler: { [weak self] textField in
                 textFieldInfo.configurationsClosure?(textField)
-                self.textFieldInfoMapper[textFieldInfo.identifier] = textField
+                self?.textFieldInfoMapper[textFieldInfo.identifier] = textField
             })
         }
 

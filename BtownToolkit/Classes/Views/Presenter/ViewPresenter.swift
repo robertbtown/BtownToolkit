@@ -64,12 +64,13 @@ public class ViewPresenter {
 
     private func presentViewPresentObject(_ presentObject: ViewPresentObject) {
         presenterWindow.isHidden = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [unowned self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) { [weak self] in
+            guard let strongSelf = self else { return }
             let presenterVC: UIViewController
             if let prevVC = presentObject.previousPresentObject?.viewController, !ViewPresenter.newPresentationDismissesPrevFirst {
                 presenterVC = prevVC
             } else {
-                presenterVC = self.viewPresenterVC
+                presenterVC = strongSelf.viewPresenterVC
             }
             presenterVC.present(presentObject.viewController, animated: presentObject.animated, completion: presentObject.completionClosure)
         }
@@ -89,8 +90,8 @@ public class ViewPresenter {
 
             if ViewPresenter.newPresentationDismissesPrevFirst {
                 let previousViewController = nextPresentObject.previousPresentObject?.viewController
-                previousViewController?.dismiss(animated: animated, completion: { [unowned self] in
-                    self.presentViewPresentObject(nextPresentObject)
+                previousViewController?.dismiss(animated: animated, completion: { [weak self] in
+                    self?.presentViewPresentObject(nextPresentObject)
                 })
             } else {
                 self.presentViewPresentObject(nextPresentObject)

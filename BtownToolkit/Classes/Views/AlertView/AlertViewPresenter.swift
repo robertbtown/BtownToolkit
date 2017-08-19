@@ -78,8 +78,8 @@ class AlertViewPresenter {
             self.presentObject = nextPresentObject;
             
             let previousAlertViewController = nextPresentObject.previousPresentObject?.alertViewController
-            previousAlertViewController?.dismiss(animated: animated, completion: { [unowned self] in
-                self.presentAlertViewPresentObject(nextPresentObject)
+            previousAlertViewController?.dismiss(animated: animated, completion: { [weak self] in
+                self?.presentAlertViewPresentObject(nextPresentObject)
             })
         }
         else {
