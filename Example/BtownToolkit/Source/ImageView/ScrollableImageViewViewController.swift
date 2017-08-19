@@ -17,7 +17,7 @@ class ScrollableImageViewViewController: UIViewController, BTWLocalize {
         super.viewDidLoad()
 
         // Localized title string
-        title = btwClassString("Title")
+        title = btwTypeString("Title")
 
         scrollableImageView.image = UIImage(named: "BigImageExample")
         scrollableImageView.setImageZoomScaleToAspectFitViewSize()

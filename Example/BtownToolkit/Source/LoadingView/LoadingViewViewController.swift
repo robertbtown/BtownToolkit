@@ -15,7 +15,7 @@ class LoadingViewViewController: UIViewController, BTWLocalize {
         super.viewDidLoad()
 
         // Localized title string
-        title = btwClassString("Title")
+        title = btwTypeString("Title")
     }
 
     @IBAction func showLoadingViewNormal() {

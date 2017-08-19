@@ -17,7 +17,7 @@ class ImageCropSelectionViewViewController: UIViewController, BTWLocalize {
         super.viewDidLoad()
 
         // Localized title string
-        title = btwClassString("Title")
+        title = btwTypeString("Title")
 
         imageCropSelectionView.image = UIImage(named: "BigImageExample")
     }
