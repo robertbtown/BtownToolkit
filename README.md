@@ -6,6 +6,12 @@ BtownToolkit
 This toolkit tries to simplify the lives for app developers by supplying easy to use and feature-rich components and tools that we all need in our everyday code creation. The aim is to continuously add on more components and features to the toolkit as soon as a need for something new is discovered.
 
 ## Requirements
+Version 0.2.0 and newer
+* Xcode 9.0
+* Swift 4.0
+* iOS 9.0+
+
+Older versions
 * Xcode 8.0
 * Swift 3.0
 * iOS 9.0+
@@ -65,16 +71,6 @@ end
 Replace `YOUR_TARGET_NAME` and then, in the `Podfile` directory, type:
 ```
 $ pod install
-```
-**:warning: To use CocoaPods with Xcode 8.0 and Swift 3.0, you might need to add the following lines at the bottom of your podfile: :warning:**
-```
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            config.build_settings['SWIFT_VERSION'] = '3.0'
-        end
-    end
-end
 ```
 
 ## Author

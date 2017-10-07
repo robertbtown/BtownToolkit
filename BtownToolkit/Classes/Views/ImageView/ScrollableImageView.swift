@@ -159,8 +159,8 @@ public class ScrollableImageView: UIScrollView {
         rightImViewConstraint = NSLayoutConstraint(item: imageView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0)
         widthImViewConstraint = NSLayoutConstraint(item: imageView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 0)
         heightImViewConstraint = NSLayoutConstraint(item: imageView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 0)
-        widthImViewConstraint.priority = UILayoutPriorityRequired-1
-        heightImViewConstraint.priority = UILayoutPriorityRequired-1
+        widthImViewConstraint.priority = UILayoutPriority(rawValue: UILayoutPriority.RawValue(Int(UILayoutPriority.required.rawValue)-1))
+        heightImViewConstraint.priority = UILayoutPriority(rawValue: UILayoutPriority.RawValue(Int(UILayoutPriority.required.rawValue)-1))
         
         addConstraints([
             topImViewConstraint,
