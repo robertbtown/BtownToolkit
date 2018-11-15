@@ -6,10 +6,12 @@
 //
 //
 
+// swiftlint:disable line_length
+
 import UIKit
 import ObjectiveC
 
-public typealias ActionSheetActionCallback = () -> ()
+public typealias ActionSheetActionCallback = () -> Void
 
 public enum ActionSheetActionType {
     case destructive
@@ -32,8 +34,7 @@ public class ActionSheet {
     /**
      If set then this closure is called when the AlertView disappears.
      */
-    public var wasDismissedClosure: (() -> ())?
-
+    public var wasDismissedClosure: (() -> Void)?
 
     /**
      If ActionSheet is presented on an iPad you need to set either presentFromView or 
@@ -142,7 +143,7 @@ public class ActionSheet {
          Associate self with AlertController so that self doesn't get
          deallocated until AlertController gets deallocated.
          */
-        objc_setAssociatedObject(alertController, "ActionSheetViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(alertController, "ActionSheetViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 
         // Present the AlertController
         sharedPresenter.present(alertController, animated: true) { }

@@ -11,7 +11,7 @@ import Foundation
 class AlertViewTextFieldInfo {
     let identifier: String
     let configurationsClosure: TextFieldConfigurationClosure?
-    
+
     init(identifier: String, configurationsClosure: TextFieldConfigurationClosure?) {
         self.identifier = identifier
         self.configurationsClosure = configurationsClosure

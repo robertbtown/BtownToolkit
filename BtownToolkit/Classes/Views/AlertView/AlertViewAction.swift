@@ -11,7 +11,7 @@ import Foundation
 class AlertViewAction {
     let title: String
     let actionCallback: AlertViewActionCallback?
-    
+
     init(title: String, actionCallback: AlertViewActionCallback?) {
         self.title = title
         self.actionCallback = actionCallback

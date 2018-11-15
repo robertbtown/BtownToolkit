@@ -6,17 +6,19 @@
 //
 //
 
+// swiftlint:disable line_length
+
 import UIKit
 
-fileprivate typealias PresentObjectCompletionClosure = () -> ()
+private typealias PresentObjectCompletionClosure = () -> Void
 
-fileprivate class ViewPresenterViewController: UIViewController {
+private class ViewPresenterViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return UIApplication.shared.isStatusBarHidden
     }
 }
 
-fileprivate class ViewPresentObject {
+private class ViewPresentObject {
     let viewController: UIViewController
     let animated: Bool
     let completionClosure: PresentObjectCompletionClosure?
@@ -31,7 +33,7 @@ fileprivate class ViewPresentObject {
 
 public class ViewPresenter {
 
-    typealias PresentVCCompletionClosure = () -> ()
+    typealias PresentVCCompletionClosure = () -> Void
 
     private let presenterWindow: UIWindow
     let viewPresenterVC: UIViewController
@@ -58,8 +60,8 @@ public class ViewPresenter {
 
         presenterWindow.makeKeyAndVisible()
 
-        self.presenterWindow = presenterWindow;
-        self.viewPresenterVC = viewPresenterVC;
+        self.presenterWindow = presenterWindow
+        self.viewPresenterVC = viewPresenterVC
     }
 
     private func presentViewPresentObject(_ presentObject: ViewPresentObject) {
@@ -85,8 +87,8 @@ public class ViewPresenter {
          as a previous. Then display the new ViewController.
          */
         if let presentObject = self.presentObject {
-            nextPresentObject.previousPresentObject = presentObject;
-            self.presentObject = nextPresentObject;
+            nextPresentObject.previousPresentObject = presentObject
+            self.presentObject = nextPresentObject
 
             if ViewPresenter.newPresentationDismissesPrevFirst {
                 let previousViewController = nextPresentObject.previousPresentObject?.viewController
@@ -97,7 +99,7 @@ public class ViewPresenter {
                 self.presentViewPresentObject(nextPresentObject)
             }
         } else {
-            self.presentObject = nextPresentObject;
+            self.presentObject = nextPresentObject
             self.presentViewPresentObject(nextPresentObject)
         }
     }
@@ -109,7 +111,7 @@ public class ViewPresenter {
                 self.presentViewPresentObject(previousPresentObject)
             }
         } else {
-            self.presentObject = nil;
+            self.presentObject = nil
             self.presenterWindow.isHidden = true
         }
     }

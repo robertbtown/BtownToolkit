@@ -6,6 +6,8 @@
 //
 //
 
+// swiftlint:disable line_length
+
 import UIKit
 
 /// This protocol defines a LoadingView.
@@ -16,7 +18,7 @@ import UIKit
 ///     let loadingView = LoadingViewController(loadingViewType: MyCustomLoadingView.self, loadingText: "Loading", completionText: "Completed", completionErrorText: "Error")
 ///     loadingView.startLoading()
 public protocol LoadingViewProtocol {
-    typealias CompletionClosure = () -> ()
+    typealias CompletionClosure = () -> Void
 
     /// Use this to update how much of the loading that is currently completed.
     /// It will default to zero on init.

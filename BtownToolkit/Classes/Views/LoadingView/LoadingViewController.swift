@@ -6,6 +6,8 @@
 //
 //
 
+// swiftlint:disable line_length
+
 import UIKit
 
 /// This class manages a LoadingView.
@@ -114,7 +116,7 @@ fileprivate extension LoadingViewController {
          Associate self with loadingViewViewController so that self doesn't get
          deallocated until loadingViewViewController gets deallocated.
          */
-        objc_setAssociatedObject(loadingViewVC, "LoadingViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(loadingViewVC, "LoadingViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
 
     func stopLoadingAndDismissView(withCompletionState: Bool, autoDismissDelay: TimeInterval, withError: Bool) {

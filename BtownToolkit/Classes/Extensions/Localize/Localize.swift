@@ -22,7 +22,7 @@ public extension BTWLocalize {
         let stringKey = String(describing: self) + "." + key
         return Bundle.main.localizedString(forKey: stringKey, value: "", table: nil)
     }
-    
+
     func btwTypeString(_ key: String) -> String {
         let stringKey = String(describing: type(of: self)) + "." + key
         return Bundle.main.localizedString(forKey: stringKey, value: "", table: nil)

@@ -11,7 +11,7 @@ import Foundation
 class ActionSheetAction {
     let title: String
     let actionCallback: ActionSheetActionCallback?
-    
+
     init(title: String, actionCallback: ActionSheetActionCallback?) {
         self.title = title
         self.actionCallback = actionCallback

@@ -6,11 +6,13 @@
 //  Copyright © 2016 Robert Magnusson. All rights reserved.
 //
 
+// swiftlint:disable line_length
+
 import UIKit
 import ObjectiveC
 
-public typealias AlertViewActionCallback = () -> ()
-public typealias TextFieldConfigurationClosure = (UITextField) -> ()
+public typealias AlertViewActionCallback = () -> Void
+public typealias TextFieldConfigurationClosure = (UITextField) -> Void
 
 public enum AlertViewActionType {
     case destructive
@@ -33,7 +35,7 @@ public class AlertView {
     /**
         If set then this closure is called when the AlertView disappears.
      */
-    public var wasDismissedClosure: (() -> ())?
+    public var wasDismissedClosure: (() -> Void)?
 
     public init(title: String?, message: String?) {
         self.title = title ?? ""
@@ -133,7 +135,7 @@ public class AlertView {
             Associate self with AlertController so that self doesn't get
             deallocated until AlertController gets deallocated.
          */
-        objc_setAssociatedObject(alertController, "AlertViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(alertController, "AlertViewKey", self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 
         // Present the AlertController
         sharedPresenter.present(alertController, animated: true) { }

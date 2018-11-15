@@ -6,10 +6,13 @@
 //
 //
 
+// swiftlint:disable file_length
+// swiftlint:disable line_length
+// swiftlint:disable multiple_closures_with_trailing_closure
+
 import UIKit
 import PureLayout
 import AngleGradientLayer
-
 
 /// This is a sample class of a LoadingView.
 /// You can create your own LoadingViews by conforming to LoadingViewProtocol
@@ -382,12 +385,12 @@ private extension DefaultLoadingView {
         self.loadingContainerView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         self.loadingContainerView.alpha = 0
 
-        let loadingUpdateBlock: () -> () = { [weak self] in
+        let loadingUpdateBlock: () -> Void = { [weak self] in
             guard let `self` = self else { return }
             self.loadingContainerView.transform = .identity
             self.loadingContainerView.alpha = 1
         }
-        let backgroundUpdateBlock: () -> () = { [weak self] in
+        let backgroundUpdateBlock: () -> Void = { [weak self] in
             guard let `self` = self else { return }
             self.backgroundView.backgroundColor = self.backgroundColor
         }
@@ -402,7 +405,7 @@ private extension DefaultLoadingView {
     }
 
     func dismissLoadingView(withDelay delay: Double, completion: @escaping CompletionClosure) {
-        let updateBlock: () -> () = { [weak self] in
+        let updateBlock: () -> Void = { [weak self] in
             guard let `self` = self else { return }
             self.backgroundView.backgroundColor = .clear
             self.loadingContainerView.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
@@ -411,7 +414,7 @@ private extension DefaultLoadingView {
 
         UIView.animate(withDuration: 0.2, delay: delay, options: .curveEaseOut, animations: {
             updateBlock()
-        }) { (finished) in
+        }) { (_) in
             completion()
         }
     }
@@ -424,7 +427,7 @@ private extension DefaultLoadingView {
         var showCheckmarkView = false
         var spinningCircleViewAlpha: CGFloat = 0
         var completionCircleViewAlpha: CGFloat = 0
-        var labelText: String? = nil
+        var labelText: String?
         let labelColor: UIColor
 
         switch state {
@@ -456,7 +459,7 @@ private extension DefaultLoadingView {
         loadingLabel.text = labelText
         loadingLabel.textColor = labelColor
 
-        let updateCircleViewAlpha: () -> () = { [weak self] in
+        let updateCircleViewAlpha: () -> Void = { [weak self] in
             guard let `self` = self else { return }
             self.completionCircleView.alpha = completionCircleViewAlpha
             self.spinningCircleView.alpha = spinningCircleViewAlpha

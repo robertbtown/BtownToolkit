@@ -258,11 +258,11 @@
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "BtownToolkit_Example" */;
 			buildPhases = (
 				7ED1E39C3952AB7ECE955F67 /* [CP] Check Pods Manifest.lock */,
-				FC497D2C219DFA5400F84075 /* ShellScript */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				8B578C170E4F5258180B5A57 /* [CP] Embed Pods Frameworks */,
+				FC497D2C219DFA5400F84075 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -429,7 +429,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
