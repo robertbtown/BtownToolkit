@@ -70,6 +70,7 @@ public class ImageCropSelectionView: UIView {
         backgroundColor = .clear
         translatesAutoresizingMaskIntoConstraints = false
         
+        scrollableImageView.contentInsetAdjustmentBehavior = .never
         addSubview(scrollableImageView)
         
         let maskView = UIView()
@@ -78,14 +79,14 @@ public class ImageCropSelectionView: UIView {
         maskView.backgroundColor = UIColor(white: 0, alpha: 0.7)
         addSubview(maskView)
         
-        maskHoleLayer.fillRule = kCAFillRuleEvenOdd
+        maskHoleLayer.fillRule = CAShapeLayerFillRule.evenOdd
         maskView.layer.mask = maskHoleLayer
         
         maskHoleBorderLayer.lineWidth = 2;
         maskHoleBorderLayer.strokeColor = UIColor.white.cgColor
         maskHoleBorderLayer.fillColor = UIColor.clear.cgColor
-        maskHoleBorderLayer.lineCap = kCALineCapRound
-        maskHoleBorderLayer.lineJoin = kCALineJoinRound
+        maskHoleBorderLayer.lineCap = CAShapeLayerLineCap.round
+        maskHoleBorderLayer.lineJoin = CAShapeLayerLineJoin.round
         maskView.layer.addSublayer(maskHoleBorderLayer)
 
 
@@ -132,7 +133,7 @@ extension ImageCropSelectionView {
         
         let viewWidth = bounds.width
         let viewHeight = bounds.height
-        let holeEdgeMargin: CGFloat = 4
+        let holeEdgeMargin: CGFloat = 8
         let holeDiameter = min(Constants.MaxMaskHoleDiamater, min(viewWidth, viewHeight) - 2*holeEdgeMargin)
         
         maskHoleFrame = CGRect(x: viewWidth/2-holeDiameter/2, y: viewHeight/2-holeDiameter/2, width: holeDiameter, height: holeDiameter)

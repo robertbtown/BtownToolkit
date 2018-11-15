@@ -20,5 +20,26 @@ class ImageCropSelectionViewViewController: UIViewController, BTWLocalize {
         title = btwTypeString("Title")
 
         imageCropSelectionView.image = UIImage(named: "BigImageExample")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Get image", style: .plain, target: self, action: #selector(getPhotoAction))
+    }
+    
+    @objc private func getPhotoAction() {
+        guard let image = imageCropSelectionView.croppedSelectionImage() else { return }
+        
+        let imageBgView = UIView()
+        imageBgView.frame = view.frame
+        imageBgView.backgroundColor = UIColor(white: 0, alpha: 0.9)
+        view.addSubview(imageBgView)
+        
+        let imageView = UIImageView(image: image)
+        view.addSubview(imageView)
+        imageView.frame = view.frame.insetBy(dx: 50, dy: 50)
+        imageView.contentMode = .scaleAspectFit
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            imageView.removeFromSuperview()
+            imageBgView.removeFromSuperview()
+        }
     }
 }

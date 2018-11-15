@@ -48,7 +48,7 @@ class AlertViewPresenter {
     private init() {
         // Setup alertWindow and alertPresenterViewController to present the AlertViewControllers on.
         let alertPresenterWindow = UIWindow(frame: UIScreen.main.bounds)
-        alertPresenterWindow.windowLevel = UIWindowLevelAlert
+        alertPresenterWindow.windowLevel = UIWindow.Level.alert
         alertPresenterWindow.backgroundColor = UIColor.clear
         
         let alertViewPresenterVC = AlertViewPresenterViewController()

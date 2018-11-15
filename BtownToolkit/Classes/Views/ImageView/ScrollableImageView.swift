@@ -141,6 +141,8 @@ public class ScrollableImageView: UIScrollView {
     }
     
     private func setupViews() {
+        contentInsetAdjustmentBehavior = .always
+
         backgroundColor = .clear
         translatesAutoresizingMaskIntoConstraints = false
         delegate = self
@@ -210,7 +212,7 @@ extension ScrollableImageView {
             contentInset.right = imageViewContentInset.right+imageViewRect.minX
         }
         
-        self.contentInset = contentInset;
+        self.contentInset = contentInset
     }
     
     fileprivate func updateConstraints(forViewSize viewSize: CGSize) {

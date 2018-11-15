@@ -196,8 +196,8 @@ private extension DefaultLoadingView {
 
         checkmarkViewShapeLayer.fillColor = UIColor.clear.cgColor
         checkmarkViewShapeLayer.strokeColor = UIColor.purple.cgColor
-        checkmarkViewShapeLayer.lineCap = kCALineCapRound
-        checkmarkViewShapeLayer.lineJoin = kCALineJoinRound
+        checkmarkViewShapeLayer.lineCap = CAShapeLayerLineCap.round
+        checkmarkViewShapeLayer.lineJoin = CAShapeLayerLineJoin.round
         checkmarkViewShapeLayer.lineWidth = DefaultLoadingView.checkmarkLineWidth
         checkmarkView.layer.mask = checkmarkViewShapeLayer
     }
@@ -209,8 +209,8 @@ private extension DefaultLoadingView {
 
         crossViewShapeLayer.fillColor = UIColor.clear.cgColor
         crossViewShapeLayer.strokeColor = UIColor.purple.cgColor
-        crossViewShapeLayer.lineCap = kCALineCapRound
-        crossViewShapeLayer.lineJoin = kCALineJoinRound
+        crossViewShapeLayer.lineCap = CAShapeLayerLineCap.round
+        crossViewShapeLayer.lineJoin = CAShapeLayerLineJoin.round
         crossViewShapeLayer.lineWidth = DefaultLoadingView.checkmarkLineWidth
         crossView.layer.mask = crossViewShapeLayer
     }
@@ -218,7 +218,7 @@ private extension DefaultLoadingView {
     func styleShapeLayer(layer: CAShapeLayer) {
         layer.fillColor = UIColor.clear.cgColor
         layer.strokeColor = UIColor.purple.cgColor
-        layer.lineCap = kCALineCapRound
+        layer.lineCap = CAShapeLayerLineCap.round
         layer.lineWidth = DefaultLoadingView.circleLineWidth
     }
 
@@ -348,8 +348,8 @@ private extension DefaultLoadingView {
             pathAnimation.duration = 0.3
             pathAnimation.fromValue = 0.0
             pathAnimation.toValue = 1.0
-            pathAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-            pathAnimation.fillMode = kCAFillModeForwards
+            pathAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+            pathAnimation.fillMode = CAMediaTimingFillMode.forwards
             pathAnimation.isRemovedOnCompletion = false
             checkmarkViewShapeLayer.add(pathAnimation, forKey: strokeEndKeyPath)
         } else {
@@ -365,8 +365,8 @@ private extension DefaultLoadingView {
             pathAnimation.duration = 0.3
             pathAnimation.fromValue = 0.0
             pathAnimation.toValue = 1.0
-            pathAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
-            pathAnimation.fillMode = kCAFillModeForwards
+            pathAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+            pathAnimation.fillMode = CAMediaTimingFillMode.forwards
             pathAnimation.isRemovedOnCompletion = false
             crossViewShapeLayer.add(pathAnimation, forKey: strokeEndKeyPath)
         } else {

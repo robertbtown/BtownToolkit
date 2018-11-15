@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4p6-7h-nyc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4p6-7h-nyc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="4p6-7h-nyc" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZOW-Mr-eYZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -76,16 +76,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39K-1r-LGN" customClass="ScrollableImageView" customModule="BtownToolkit">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="39K-1r-LGN" secondAttribute="trailing" id="Mgn-BY-Xv3"/>
-                            <constraint firstItem="39K-1r-LGN" firstAttribute="top" secondItem="GgL-aY-eoe" secondAttribute="top" id="dVZ-kc-l6V"/>
+                            <constraint firstItem="39K-1r-LGN" firstAttribute="top" secondItem="dxv-w5-7jN" secondAttribute="bottom" id="dVZ-kc-l6V"/>
                             <constraint firstItem="39K-1r-LGN" firstAttribute="leading" secondItem="GgL-aY-eoe" secondAttribute="leading" id="j2s-Yd-f6g"/>
-                            <constraint firstItem="gew-LS-TiZ" firstAttribute="top" secondItem="39K-1r-LGN" secondAttribute="bottom" id="vld-dk-N9O"/>
+                            <constraint firstAttribute="bottom" secondItem="39K-1r-LGN" secondAttribute="bottom" id="vld-dk-N9O"/>
                         </constraints>
                     </view>
                     <connections>
@@ -109,16 +109,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PR4-el-wnK" customClass="ImageCropSelectionView" customModule="BtownToolkit">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PR4-el-wnK" firstAttribute="top" secondItem="PZ2-UU-bre" secondAttribute="top" id="fi5-od-m9Q"/>
+                            <constraint firstAttribute="bottom" secondItem="PR4-el-wnK" secondAttribute="bottom" id="gh9-9z-rnk"/>
+                            <constraint firstItem="PR4-el-wnK" firstAttribute="top" secondItem="Sf1-8k-sbE" secondAttribute="bottom" id="i1X-jp-QOM"/>
                             <constraint firstAttribute="trailing" secondItem="PR4-el-wnK" secondAttribute="trailing" id="ixa-nI-6To"/>
                             <constraint firstItem="PR4-el-wnK" firstAttribute="leading" secondItem="PZ2-UU-bre" secondAttribute="leading" id="kFL-3J-x0u"/>
-                            <constraint firstItem="KZq-W9-iYr" firstAttribute="top" secondItem="PR4-el-wnK" secondAttribute="bottom" id="xMu-um-aeS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -149,7 +149,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyN-B9-LTi">
-                                <rect key="frame" x="115.5" y="260.5" width="144" height="30"/>
+                                <rect key="frame" x="116" y="260.5" width="143" height="30"/>
                                 <state key="normal" title="Try normal alert view"/>
                                 <connections>
                                     <action selector="showNormalAlertView" destination="foY-HK-Fzi" eventType="touchUpInside" id="Jkl-pn-1QE"/>
@@ -182,7 +182,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHR-pD-PHF">
-                                <rect key="frame" x="131" y="318.5" width="112" height="30"/>
+                                <rect key="frame" x="131.5" y="318.5" width="112" height="30"/>
                                 <state key="normal" title="Try Action sheet"/>
                                 <connections>
                                     <action selector="showActionSheetFromButton" destination="f61-yG-N8j" eventType="touchUpInside" id="Ikp-wB-Q8T"/>
@@ -237,14 +237,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nks-HD-il6">
-                                <rect key="frame" x="91" y="318.5" width="194" height="30"/>
+                                <rect key="frame" x="90.5" y="318.5" width="194" height="30"/>
                                 <state key="normal" title="Try LoadingView completion"/>
                                 <connections>
                                     <action selector="showLoadingViewWithCompletion" destination="wgx-Yd-jb1" eventType="touchUpInside" id="HDq-rg-S3n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPV-zc-oRG">
-                                <rect key="frame" x="55" y="356" width="264" height="30"/>
+                                <rect key="frame" x="55.5" y="356" width="264" height="30"/>
                                 <state key="normal" title="Try LoadingView completion with error"/>
                                 <connections>
                                     <action selector="showLoadingViewWithCompletionAndError" destination="wgx-Yd-jb1" eventType="touchUpInside" id="YWp-2g-wMz"/>

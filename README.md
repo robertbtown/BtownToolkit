@@ -6,7 +6,12 @@ BtownToolkit
 This toolkit tries to simplify the lives for app developers by supplying easy to use and feature-rich components and tools that we all need in our everyday code creation. The aim is to continuously add on more components and features to the toolkit as soon as a need for something new is discovered.
 
 ## Requirements
-Version 0.2.0 and newer
+Version 1.0.0 and newer
+* Xcode 10.0
+* Swift 4.2
+* iOS 11.0+
+
+Version 0.2.0
 * Xcode 9.0
 * Swift 4.0
 * iOS 9.0+

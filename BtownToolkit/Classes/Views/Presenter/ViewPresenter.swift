@@ -50,7 +50,7 @@ public class ViewPresenter {
     private init() {
         // Setup presenterWindow and presenterViewController to present the ViewControllers on.
         let presenterWindow = UIWindow(frame: UIScreen.main.bounds)
-        presenterWindow.windowLevel = UIWindowLevelAlert
+        presenterWindow.windowLevel = UIWindow.Level.alert
         presenterWindow.backgroundColor = UIColor.clear
 
         let viewPresenterVC = ViewPresenterViewController()
