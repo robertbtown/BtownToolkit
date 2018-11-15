@@ -1,6 +1,6 @@
 PODS:
   - AngleGradientLayer (1.2.3)
-  - BtownToolkit (1.0.1):
+  - BtownToolkit (1.0.3):
     - AngleGradientLayer (~> 1.2)
     - PureLayout (~> 3.1)
   - PureLayout (3.1.4)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AngleGradientLayer: 085302f7f9764735762f83642e86cababfec1d37
-  BtownToolkit: b784a1717ed6fd489b9f2ee60016f62688f95ec7
+  BtownToolkit: d6a8529aa1a654fb7f3e2f7b5488af487ce2b4c7
   PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
 
 PODFILE CHECKSUM: e11d8df077cbfd2b1471d262b2cebc237856ddcb
