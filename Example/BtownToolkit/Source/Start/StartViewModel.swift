@@ -9,23 +9,23 @@
 import Foundation
 
 struct StartViewModel {
-    
+
     let featureItems: [FeatureItem]
-    var didSelectListFeatureClosure: ((FeatureItem) -> ())?
-    
+    var didSelectListFeatureClosure: ((FeatureItem) -> Void)?
+
     init() {
         featureItems = [
-            .AlertView,
-            .ActionSheet,
-            .ScrollableImageView,
-            .ImageCropSelectionView,
-            .LoadingView
+            .alertView,
+            .actionSheet,
+            .scrollableImageView,
+            .imageCropSelectionView,
+            .loadingView
         ]
     }
-    
+
     func featureItem(atIndexPath: IndexPath) -> FeatureItem {
         guard atIndexPath.row < featureItems.count else {
-            return .AlertView
+            return .alertView
         }
         return featureItems[atIndexPath.row]
     }

@@ -6,6 +6,8 @@
 //  Copyright (c) 2016 Robert Magnusson. All rights reserved.
 //
 
+// swiftlint:disable line_length
+
 import UIKit
 
 @UIApplicationMain
@@ -39,7 +41,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
-

@@ -11,5 +11,5 @@ import Foundation
 struct ListItem {
     let name: String
     let shortInfoText: String?
-    let FeatureItem: FeatureItem
+    let featureItem: FeatureItem
 }

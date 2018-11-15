@@ -6,6 +6,8 @@
 //  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
+// swiftlint:disable line_length
+
 import UIKit
 import BtownToolkit
 

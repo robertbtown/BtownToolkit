@@ -9,54 +9,54 @@
 import UIKit
 
 enum FeatureItem {
-    case AlertView
-    case ActionSheet
-    case ScrollableImageView
-    case ImageCropSelectionView
-    case LoadingView
+    case alertView
+    case actionSheet
+    case scrollableImageView
+    case imageCropSelectionView
+    case loadingView
 }
 
 extension FeatureItem {
     var name: String {
         switch self {
-        case .AlertView:
+        case .alertView:
             return "AlertView"
-        case .ActionSheet:
+        case .actionSheet:
             return "ActionSheet"
-        case .ScrollableImageView:
+        case .scrollableImageView:
             return "ScrollableImageView"
-        case .ImageCropSelectionView:
+        case .imageCropSelectionView:
             return "ImageCropSelectionView"
-        case .LoadingView:
+        case .loadingView:
             return "LoadingView"
         }
     }
     var shortInfoText: String {
         switch self {
-        case .AlertView:
+        case .alertView:
             return "Simplyfies UIAlertController."
-        case .ActionSheet:
+        case .actionSheet:
             return "Simplyfies UIAlertController."
-        case .ScrollableImageView:
+        case .scrollableImageView:
             return "Zoomable and scrollable ImageView."
-        case .ImageCropSelectionView:
+        case .imageCropSelectionView:
             return "ScrollableImageView with selection area."
-        case .LoadingView:
+        case .loadingView:
             return "A nice looking loading view"
         }
     }
-    
+
     private var storyboardId: String {
         switch self {
-        case .AlertView:
+        case .alertView:
             return "AlertViewScreen"
-        case .ActionSheet:
+        case .actionSheet:
             return "ActionSheetScreen"
-        case .ScrollableImageView:
+        case .scrollableImageView:
             return "ScrollabelImageViewScreen"
-        case .ImageCropSelectionView:
+        case .imageCropSelectionView:
             return "ImageCropSelectionViewScreen"
-        case .LoadingView:
+        case .loadingView:
             return "LoadingViewScreen"
         }
     }
